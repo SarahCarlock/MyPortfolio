@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale(1.0)">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css"></link>
+  <a href="" id="profile-link" target="_blank"></a>
+</head>
+
+<main>
+
+    <div>
+    <nav id="navbar">
+      <ul id="nav-container">
+        <li><a href="#about" class="nav-link" class="active">About</a></li>
+        <li><a href="#projects" class="nav-link" class="active">Projects</a></li>
+        <li><a href="#contact" class="nav-link" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+
+  <div id="about">
+    <header>
+      <h1 id="intro" class="introduction">Welcome</h1>
+      <p class="introduction"> My name is Sarah.</p>
+      <p class="introduction">I'm spreading my wings and learning web design!</p>
+    </header>
+  </div>
+
+  <div class="title" id="project-title">My Projects</div>
+  <div id="projects">
+    <div class="project-tile" id="project1"><a href="" target="_blank"></a>Survey Form</div>
+    <div class="project-tile" id="project2"><a href="" target="_blank"></a>Tribute Page</div>
+    <div class="project-tile" id="project3"><a href="" target="_blank"></a>Technical Documentation</div>
+    <div class="project-tile" id="project4"><a href="" target="_blank"></a>Sample Product Landing Page</div>
+  </div>
+
+<div class="title" id="contact-title">Contact Information</div>
+  <div id="contact">
+    <div id="contact-section">Here is my contact information!
+    </div>
+    <footer>This portfolio webpage was made as a project during <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp.com</a> responsive web design course. <br>Sarah C 2022</footer>
+  </div>
+
+</main>
+</html>

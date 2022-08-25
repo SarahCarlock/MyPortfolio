@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head><title id="title">This is not the greatest webpage in the world, no...<br>
+    This is just a tribute to the Tribute.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <main id="main">
+    <h1 id="title">This is not the greatest webpage in the world, no...<br>
+    This is just a tribute to the Tribute.</<h1>
+    <div id="img-div">
+      <img id="image" src="https://cdn.musicfeeds.com.au/assets/uploads/Screen-Shot-2018-05-08-at-9.03.14-am-1-e1525734389419-1280x720.png"alt="Tenacious-D"/>
+      <div id="img-caption">Tenacious D, paying tribute to the greatest song in the world.</div>
+    </div>
+    <br>
+    <div id="tribute-info">Tenacious D is an American comedy rock duo formed in Los Angeles, California, in 1994. It was founded by actors Jack Black and Kyle Gass, who were members of The Actors' Gang theater company at the time. -Wikipedia.com
+    <a href="https://www.youtube.com/watch?v=_lK4cX5xGiQ"id="tribute-link"target="_blank">Click here for the Tribute.</a>
+    </div>
+  </main>
+  </html>

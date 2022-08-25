@@ -1,0 +1,86 @@
+@media screen and (max-width: 1200px)  {
+    header, main {
+    background-color: LightGray;
+    color: black;
+    margin: 0;
+    padding: 30px;
+  }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    text-decoration: none;
+  }
+  
+  li {
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  li a {
+    color: black;
+    text-decoration: none;
+  }
+  /* Change the link color to #111 (black) on hover */
+  li :hover {
+    text-decoration-line: underline;
+    color: darkolivegreen
+  }
+  
+  .form_flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ input .radio {
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  heading {
+    display: block;
+    color: darkgreen;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .break {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  iframe {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+  }
+  footer {
+    font-style: italic;
+  }
+  
+  #created {
+    font-weight: bold;
+  }

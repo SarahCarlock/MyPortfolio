@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Animal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Favorite Animal Survey
+      <p id="description">Thank you for filling out our survey!</p>
+      <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label">Name<input id="name"name="name"type="text"placeholder="full name"required>
+        </label>
+        <label id="email-label">Email<input id="email"name="email"type="email"pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"placeholder="email address"required>
+        </label>
+        <label id="number-label">Age(optional)<input id="number"name="age"type="number"max="99"min="13"placeholder="enter your age here"> 
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label id="radio-label">What do you think herbivores eat?
+          <label id="meat-label"><input type="radio" name="eat" class="inline" value="eat-meat"/> Meat</label>
+        <label id="produce-label"><input type="radio" name="eat" class="inline"value="produce" /> Produce</label>
+        <label id="not-sure-label"><input type="radio" name="eat" class="inline"value="not-sure" /> Not Sure</label>
+        </label>
+        </fieldset>
+
+        <fieldset>
+        <label id="dropdown-label">Which animal lives in the water?
+          <select id="dropdown"name="current-role">
+            <option value="">(select current role)</option>
+            <option value="1">Lion</option>
+            <option value="2">Tigers</option>
+            <option value="3">Sharks</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <fieldset>
+          <label>Select all animals that you think are cute:
+          <input type="checkbox" name="cute" class="inline"value="bears-cute"/>Bears
+          <input type="checkbox" name="cute" class="inline"value="gorillas-cute"/>Gorillas
+          <input type="checkbox" name="cute" class="inline"value="cats-cute"/>Cats
+          <input type="checkbox" name="cute" class="inline"value="dogs-cute"/>Dogs
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Extra thoughts?
+          <textarea name="comments-suggestions" rows="3" cols="30" placeholder="thoughts here!"></textarea>
+      </fieldset>
+      <input id="submit"type="submit" value="Submit" />
+    </form>
+    </h1>
+  </body>
+</html>

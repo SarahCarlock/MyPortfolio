@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header id="header">
+    <img id="header-img" src="https://drive.google.com/uc?export=view&id=1aQMzi5ynzJfb8TJDPEc0Jm6JXGc137ZV" width="640" height="480" />
+    <title id="header-title">PetRox</title>
+    <nav id="nav-bar"class="flex-container" type="nav-bar" name="nav-bar">
+      <ul id="nav-list">
+        <li>
+          <a href="#origin"class="nav-link">Origin of the Pet Rock.
+          </a>
+        </li>
+        <li>
+          <a href="#video-make" class="nav-link">How to make your own pet rock!
+          </a>
+        </li>
+        <li>
+          <a href="#video" class="nav-link">Pet Rock fad!
+            </a>
+          </li>
+      </ul>
+    </nav>
+    </header>
+  <main class="main">
+  <div>
+    <heading id="interest">Do YOU like Rocks?<br> Fill out the form below!</heading><br>
+    <br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" class="form_flex-container">
+      <div>
+        <input type="radio" id="yes" class="radio">Yes</input>
+        <input type="radio" id="no" class="radio">No</input>
+        <input type="radio" id="maybe?" class="radio">Maybe?</input>
+      </div>
+    <div class="break"></div>
+    <input type="text" id="fname" placeholder="First Name" name="fname" class="form_flex-container"></input><br>
+    <br>
+    <input type="text" id="lname" placeholder="Last Name" name="lname" class="form_flex-container"></input><br>
+    <br>
+    <input type="email" id="email" placeholder="email" name="email" class="form_flex-container"></input><br>
+    <br>
+    <input id="submit" type="submit" class="form_flex-container"></input>
+    <div class="break"></div>
+  </form>
+  </div>
+  <div>
+    <h1 id="origin">Gary Dahl came up with the idea in a bar while listening to his friends complain about their pets; this gave him the idea for the perfect "pet": a rock. A rock would not need to be fed, walked, bathed, or groomed, and it would not die, become sick, or be disobedient. Dahl said that they were to be the perfect pets and joked about it with his friends. Dahl took his "pet" idea seriously, however, and drafted an instruction manual for a pet rock. The manual was full of puns and gags that referred to the rock as an actual pet.<br>
+<br>Dahl's biggest expense was the die-cutting and manufacture of the boxes. The rocks only cost one cent each, and the straw was nearly free. For the initial run of booklets, Dahl had a printing job for a client, and "tacked" the pet rock booklet onto the main job. This resulted in a batch requiring only a cut and trim, at almost no cost to him.<a href="https://en.wikipedia.org/wiki/Pet_Rock">-Wikipedia.com</a></h1>
+</div>
+<div class="break"></div>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-sJRKJORx-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video-make"></iframe>
+    </div>
+    <div class="break"></div>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1RcF1GBjg7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen" id="video">
+    </iframe>
+  </div>
+  <div class="break"></div>
+
+  <footer><span id="created">Created by Sarah</span><br> html certification prerequisite<br>freeCodeCamp.org
+    </footer>
+  </main>
+</html>
