@@ -6,18 +6,18 @@
   <header id="header">
     <img id="header-img" src="https://drive.google.com/uc?export=view&id=1aQMzi5ynzJfb8TJDPEc0Jm6JXGc137ZV" width="640" height="480" />
     <title id="header-title">PetRox</title>
-    <nav id="nav-bar"class="flex-container" type="nav-bar" name="nav-bar">
+    <nav id="nav_bar" class="flex-container" type="nav-bar" name="nav-bar">
       <ul id="nav-list">
         <li>
-          <a href="#origin"class="nav-link">Origin of the Pet Rock.
+          <a href="#origin" class="nav-link">Origin of the Pet Rock.
           </a>
         </li>
         <li>
-          <a href="#video-make" class="nav-link">How to make your own pet rock!
+          <a href="#video_make" class="nav-link">Make your own!
           </a>
         </li>
         <li>
-          <a href="#video" class="nav-link">Pet Rock fad!
+          <a href="#video" class="nav-link">Where to buy.
             </a>
           </li>
       </ul>
@@ -29,18 +29,18 @@
     <br>
     <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" class="form_flex-container">
       <div>
-        <input type="radio" id="yes" class="radio">Yes</input>
-        <input type="radio" id="no" class="radio">No</input>
-        <input type="radio" id="maybe?" class="radio">Maybe?</input>
+        <input type="radio" id="yes" class="radio"/>Yes
+        <input type="radio" id="no" class="radio" />No
+        <input type="radio" id="maybe?" class="radio" />Maybe?
       </div>
     <div class="break"></div>
-    <input type="text" id="fname" placeholder="First Name" name="fname" class="form_flex-container"></input><br>
+    <input type="text" id="fname" placeholder="First Name" name="fname" class="form_flex-container" /><br>
     <br>
-    <input type="text" id="lname" placeholder="Last Name" name="lname" class="form_flex-container"></input><br>
+    <input type="text" id="lname" placeholder="Last Name" name="lname" class="form_flex-container" /><br>
     <br>
-    <input type="email" id="email" placeholder="email" name="email" class="form_flex-container"></input><br>
+    <input type="email" id="email" placeholder="email" name="email" class="form_flex-container" /><br>
     <br>
-    <input id="submit" type="submit" class="form_flex-container"></input>
+    <input id="submit" type="submit" class="form_flex-container" />
     <div class="break"></div>
   </form>
   </div>
@@ -50,13 +50,12 @@
 </div>
 <div class="break"></div>
   <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-sJRKJORx-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video-make"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-sJRKJORx-A" id="video_make" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="break"></div>
   <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1RcF1GBjg7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen" id="video">
-    </iframe>
-  </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1RcF1GBjg7s" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   <div class="break"></div>
 
   <footer><span id="created">Created by Sarah</span><br> html certification prerequisite<br>freeCodeCamp.org
