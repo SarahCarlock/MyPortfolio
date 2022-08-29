@@ -13,8 +13,9 @@
   }
   
   h2 {
-    font-size: 60px;
-    color:rgb(100, 50, 100)
+    font-size: 100px;
+    color:  rgb(100, 50, 100);
+    font-family: Lucida Handwriting;
   }
 
   h3 {
@@ -29,19 +30,6 @@
     padding: 40px;
     display:flex;
     justify-content: center;
-    animation-name: flare;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  
-/* Animation Code */
-  @keyframes flare {
-    0% {justify-content: center};
-    25% {justify-content: left};
-    50% {justify-content: center};
-    75% {justify-content: right};
-    100% {justify-content: center};
   }
 
   #img-caption {
