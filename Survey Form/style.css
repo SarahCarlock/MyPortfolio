@@ -1,0 +1,48 @@
+* {
+    background-color: rgb(159, 159, 180);
+    font-family: Papyrus;
+    align-items: center;
+    text-align: center;
+}
+
+ #pagetitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+#description {
+    font-size: 25px;
+}
+
+#sarcasm {
+    font-size: 12px;
+    font-style: italic;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+#submit {
+    font-weight: bold;
+}
+
+img {
+    width: auto;
+    overflow: hidden;
+}
