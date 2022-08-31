@@ -26,22 +26,19 @@
     list-style-type: none;
     align-items: center;
   }
+
   /* Navigation Bar Links*/
   nav li {
     display: inline;
     padding: 20px;
     padding-bottom: 0;
-
   }
+
   nav li:hover:not(.active) {
     font-weight: bold;
   }
 
-  nav li a.active {
-    font-size: 30px;
-    font-weight: bold;
-    
-  }
+
   .nav-link {
     text-align: center;
     font-size: 20px;
@@ -86,8 +83,8 @@
     border-bottom: darkslateblue;
     border-style: solid;
   }
-  
-  .project-tile {
+
+  .project-tile  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -101,6 +98,38 @@
     align-items: center;
   }
 
+  .projectlink:link {
+    text-decoration: none;
+    color: darkslateblue;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .projectlink:visited {
+    text-decoration: none;
+    color: darkslateblue;
+  }
+
+  .projectlink:hover {
+    font-weight: bold;
+  }
+
+  .projectlink:active {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #certification {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    border: 0;
+    border-bottom: darkslateblue;
+    border-style: solid;
+  }
 
   #contact-section {
     height: 100vh;
