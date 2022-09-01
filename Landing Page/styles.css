@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px)  {
     header, main {
-    background-color: LightGray;
+    background-color: rgb(152, 190, 175);
     color: black;
     margin: 0;
     padding: 30px;
