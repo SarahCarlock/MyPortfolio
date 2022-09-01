@@ -33,7 +33,7 @@
   /* Change the link color to #111 (black) on hover */
   li :hover {
     text-decoration-line: underline;
-    color: darkolivegreen
+    font-weight: bold;
   }
   
   .form_flex-container {
@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
   }
+  
 
  input .radio {
     display:flex;
@@ -79,8 +80,16 @@
   }
   footer {
     font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   #created {
     font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
