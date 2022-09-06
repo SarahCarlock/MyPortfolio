@@ -1,4 +1,4 @@
-@media screen and (min-width: 801px)  {
+@media screen and (max-width: 1200px)  {
     header, main {
     background-color: rgb(152, 190, 175);
     color: black;
@@ -27,6 +27,7 @@
     text-decoration: none;
     align-items: center;
     max-width: 100%;
+    padding: 30px;
   }
   
   li {
