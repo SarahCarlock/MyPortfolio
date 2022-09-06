@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px)  {
+@media screen and (min-width: 801px)  {
     header, main {
     background-color: rgb(152, 190, 175);
     color: black;
