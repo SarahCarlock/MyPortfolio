@@ -46,3 +46,11 @@ img {
     width: auto;
     overflow: hidden;
 }
+
+::placeholder {
+    font-size: 12px;
+}
+
+option {
+    font-size: 12px;
+}
