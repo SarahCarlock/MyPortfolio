@@ -1,0 +1,14 @@
+* {
+    background-color: rgb(79, 75, 91);
+    color:rgb(162, 153, 187);
+}
+
+#heading_title_sunset {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    width: auto;
+    border-radius: 100px;
+}
