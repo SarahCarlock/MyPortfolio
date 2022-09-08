@@ -29,8 +29,8 @@
   /* Navigation Bar Links*/
   nav li {
     display: inline;
-    padding: 20px;
-    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   nav li:hover:not(.active) {
