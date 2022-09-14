@@ -60,15 +60,12 @@ li a:hover:not(.active) {
     font-size: 20px;
 }
 
-li a.active {
-    text-decoration: underline;
-}
-
 .travel_title {
     font-size: 50px;
     font-weight: bold;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
     text-decoration-line: underline;
+    position: sticky;
 }
 
 .break {
@@ -82,6 +79,7 @@ li a.active {
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
     text-align: center;
     justify-content: center;
+    padding-top: 20%;
 }
 
 .cartrips, .campingtrips, .married {
@@ -89,6 +87,8 @@ li a.active {
     font-family: Lucida handwriting;
     font-stretch: expanded;
     letter-spacing: 5px;
+    text-align: left;
+    padding: 20px;
 }
 
 .row {
@@ -96,6 +96,7 @@ li a.active {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .column {
