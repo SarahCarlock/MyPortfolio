@@ -26,36 +26,92 @@
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
 }
 
+.travel_title {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
+    text-decoration-line: underline;
+}
+
 .break {
     width: auto;
     height: 50px;
 }
 
-.yearcar {
+.yearcar, .yearcamp, .yearestablished {
     font-size: 50px;
     font-weight: bold;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
+    text-align: center;
+    justify-content: center;
 }
 
-.cartrips {
+.cartrips, .campingtrips, .married {
     font-size: 30;
     font-family: Lucida handwriting;
     font-stretch: expanded;
     letter-spacing: 5px;
 }
 
-.cartrips:last-of-type {
-    margin-bottom:20px;
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
 }
 
-.yearcamp {
-    font-size: 50px;
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    width: 30%;
+}
+
+.circle {
+    display: flex;
+    border-style: groove;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    color: linear-gradient(silver);
+}
+
+#ring1 {
+    z-index: 5;
+    position: relative;
+    opacity: 80%;
+    margin-right: 100px;
+}
+
+#ring2 {
+    z-index: 4;
+    position: absolute;
+    opacity: 80%;
+    margin-left: 100px;
+}
+
+#diamond {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    border-left: 25px solid transparent;
+    border-right:25px solid transparent;
+    border-top: 30px solid silver;
+    border-bottom: 25px solid transparent;
+    height: 20px;
+    width: 20px;
+    transform: rotate(34deg);
+    right: 40px;
+    bottom: 20px;
+}
+
+#created {
+    text-align: center;
+    font-size: 15px;
     font-weight: bold;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
-}
-
-.campingtrips {
-    font-size: 30;
-    font-family: Lucida handwriting;
-    font-stretch: expanded;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: lucida handwriting;
 }
