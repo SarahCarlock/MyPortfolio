@@ -1,35 +1,9 @@
-/* for phones and tablets */
-@media only screen and (max-width: 768px) {
-    li a {
-        display: block;
-        list-style-type: none;
-        text-decoration: none;
-        padding: 0px;
-        font-family: lucida handwriting;
-        font-size: 15px;
-    }
-
-    * {
-        font-size: 15px;
-    }
-}
 
 * {
     background-color: rgb(79, 75, 91);
     color:rgb(162, 153, 187);
     margin: 0;
     padding: 0;
-}
-
-#heading_title_sunset {
-    display: block;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 75vh;
-    width: auto;
-    border-radius: 100px;
-    z-index: 1;
 }
 
 #traveljournal {
@@ -45,11 +19,33 @@
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
 }
 
+.carousel-inner img {
+    display: flex;
+    position: relative;
+    height: 75vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    z-index: 1;
+    margin: auto;
+}
+
+.carousel-indicators  {
+    bottom: -30px !important;
+    overflow: visible !important;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: auto;
+    z-index: 10;
 }
 
 ul {
@@ -59,7 +55,7 @@ ul {
 li {
     display: block;
     text-align: left;
-    width: 20
+    width: 20;
 }
 
 li a {
@@ -69,11 +65,14 @@ li a {
     padding: 8px;
     font-family: lucida handwriting;
     font-size: 15px;
+    color:rgb(162, 153, 187);
 }
 
 li a:hover:not(.active) {
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none !important;
+    color:rgb(162, 153, 187);
 }
 
 .yearcar, .yearcamp, .yearbaby, .yearestablished {
