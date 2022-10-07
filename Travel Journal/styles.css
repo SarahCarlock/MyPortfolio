@@ -136,7 +136,12 @@ li a:hover:not(.active) {
     height: 150px;
     width: 150px;
     justify-content: center;
-    color: linear-gradient(silver);
+}
+
+.rings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #ring1 {
@@ -165,7 +170,7 @@ li a:hover:not(.active) {
     width: 20px;
     transform: rotate(34deg);
     right: 40px;
-    bottom: 20px;
+    bottom: 65px;
 }
 
 #created {
@@ -174,6 +179,5 @@ li a:hover:not(.active) {
     font-weight: bold;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
     margin-bottom: 50px;
-    margin-top: 50px;
     font-family: lucida handwriting;
 }
