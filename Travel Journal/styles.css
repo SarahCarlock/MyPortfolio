@@ -99,6 +99,7 @@ li a:hover:not(.active) {
     text-align: center;
     justify-content: center;
     height: 100vh;
+    margin-right: 0;
 }
 
 .rowslim {
