@@ -21,8 +21,7 @@
 
 .carousel-inner img {
     display: flex;
-    position: relative;
-    height: 75vh;
+    height: 70vh;
     width: auto;
     align-items: center;
     justify-content: center;
