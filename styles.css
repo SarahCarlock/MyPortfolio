@@ -129,6 +129,16 @@
     border-style: solid;
   }
 
+  .proof {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    padding: 10%;
+  }
+
   /* Contact Section */
   #contact-section {
     height: 93vh;
