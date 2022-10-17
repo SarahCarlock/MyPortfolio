@@ -20,7 +20,7 @@
     justify-content: center;
     flex-wrap: wrap; 
     position: fixed;
-    margin-top: 20px;
+    padding-top: 10px;
     height: 35px;
     list-style-type: none;
     align-items: center;
@@ -135,7 +135,7 @@
     justify-content: center;
     align-items: center;
     height: 75%;
-    padding: 10%;
+    padding-inline: 10%;
   }
 
   /* Contact Section */
