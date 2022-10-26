@@ -1,0 +1,132 @@
+@media screen and (min-width: 801px)  {
+    header, main {
+    background-color: rgb(152, 190, 175);
+    color: black;
+    margin: 0;
+    padding: 30px;
+  }
+  }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+  
+  * {
+    margin: 0;
+    background-color: rgb(152, 190, 175);
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    max-width: 100%;
+    padding: 30px;
+  }
+  
+  li {
+    text-align: center;
+    background-color: gray;
+  }
+  
+  li a {
+    color: black;
+    text-decoration: none;
+    background-color: gray;
+    word-wrap: keep-all;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li :hover {
+    font-weight: bold;
+  }
+  
+  .form_flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ input .radio {
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  heading {
+    display: block;
+    color: darkgreen;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #comment {
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  input {
+    font-weight: bold;
+  }
+  .break {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  h2 {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .videoclip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  
+  #created {
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .madebyme {
+    padding: 0;
+  }

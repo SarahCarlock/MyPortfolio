@@ -1,0 +1,49 @@
+.main-section {
+  margin-left: 200px; 
+  display: block;
+  float: right;
+  background-color: mediumseagreen;
+  width: 75%;
+}
+
+#main-doc {
+  background-color: mediumseagreen;
+}
+
+.navbar {
+  display: flex;
+  font-weight: bold;
+  height: 100%;
+  width: 25%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  color:mediumseagreen;
+  background-color: black;
+  text-align: center;
+  float: left;
+}
+
+.navbar li { 
+  list-style-type: none;
+}
+
+#title {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#location {
+  font-size: medium;
+  font-weight: bold;
+}
+
+#date {
+  font-style: italic;
+}
+
+#navtitle {
+  font;
+}

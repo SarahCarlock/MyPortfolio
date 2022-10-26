@@ -1,0 +1,51 @@
+* {
+    background-color: rgb(22, 29, 22);
+    margin:auto;
+    padding:auto;
+    height: auto;
+    width:auto;
+    text-align: center;
+  }
+  #title {
+    text-align:center;
+    font-size: 30px;
+    color:darkred
+  }
+  
+  h2 {
+    font-size: 100px;
+    color:  rgb(100, 50, 100);
+    font-family: Lucida Handwriting;
+  }
+
+  h3 {
+    color: darkred;
+  }
+
+  /*animated item*/
+  #image {
+    max-width: 100vh;
+    max-height: auto;
+    margin: auto;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+  }
+
+  #img-caption {
+    font-size:15px;
+    color: darkred;
+    padding-top: 25px;
+    font-style: italic;
+  }
+  #tribute-link {
+    font-size: 45px;
+  }
+  #tribute-info {
+    color: rgb(100, 50, 100);
+    font-size: 20px;
+  }
+
+  .break {
+    margin: 50px;
+  }
