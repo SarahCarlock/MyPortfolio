@@ -67,7 +67,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: large;
     height: 200px;
     width: 200px;
     margin: 20px;
@@ -88,15 +87,20 @@
     color: darkslateblue;
   }
 
-  .projectlink:hover {
-    border: solid darkslategray;
-  }
 
   .projectlink:active {
     text-decoration: none;
   }
 
   /* Certificcation Section */
+  #certifications {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .proof {
     display: inline;
     flex-direction: row;
