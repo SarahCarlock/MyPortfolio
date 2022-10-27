@@ -54,8 +54,8 @@
     font-style: italic;
   }
   
-  /* Project Section
-  #projects {
+  /* Project Section */
+  #portfolio {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
     border: 0;
     border-bottom: darkslateblue;
     border-style: solid;
-  } */
+  }
 
   .project-tile {
     display: flex;
@@ -73,7 +73,6 @@
     font-size: large;
     height: 200px;
     width: 200px;
-    border: solid darkslategray;
     margin: 20px;
     padding: 20px;
     justify-content: center;
@@ -93,7 +92,7 @@
   }
 
   .projectlink:hover {
-    font-weight: bold;
+    border: solid darkslategray;
   }
 
   .projectlink:active {
