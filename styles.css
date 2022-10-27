@@ -5,7 +5,7 @@
     padding: 0;
   }
   
-  /* Navigation Bar*/
+  /* Navigation Bar
   nav {
     width: 100vw;
     display: flex;
@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-  /* Navigation Bar Links*/
+  /* Navigation Bar Links
   nav li {
     display: inline;
     padding-left: 30px;
@@ -36,7 +36,7 @@
     font-size: 20px;
     text-decoration: none;
     color:darkslateblue
-  }
+  } */
   
   /* About Section */
   #about {
@@ -48,21 +48,13 @@
     position: static;
     padding-bottom: 10px;
     align-items: center;
-    border: 0;
-    border-bottom: darkslateblue;
-    border-style: solid;
   }
   
   p.introduction {
     font-style: italic;
   }
-
-  .title {
-    display: block;
-    text-align: center;
-  }
   
-  /* Project Section */
+  /* Project Section
   #projects {
     height: 100vh;
     display: flex;
@@ -72,9 +64,9 @@
     border: 0;
     border-bottom: darkslateblue;
     border-style: solid;
-  }
+  } */
 
-  .project-tile  {
+  .project-tile {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -109,25 +101,16 @@
   }
 
   /* Certificcation Section */
-  #certification {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 0;
-    border-bottom: darkslateblue;
-    border-style: solid;
-  }
-
   .proof {
-    display: flex;
+    display: inline;
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    height: 75%;
-    padding-inline: 10%;
   }
 
   /* Contact Section */
