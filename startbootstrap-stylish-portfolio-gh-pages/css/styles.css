@@ -11403,7 +11403,7 @@ html {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
+  background: darkslategray !important;
   line-height: 50px;
   z-index: 999;
 }
@@ -11412,6 +11412,10 @@ html {
 }
 .menu-toggle:hover {
   background: #343a40;
+}
+<!-- Hamburger Menu-->
+svg {
+  background-color: darkslategray !important;
 }
 
 .btn-xl {
