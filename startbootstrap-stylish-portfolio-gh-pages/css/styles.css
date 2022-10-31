@@ -11335,7 +11335,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: darkslategray;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11351,14 +11351,14 @@ html {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: white;
   padding: 15px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: darkslategray;
 }
 
 .sidebar-nav li a:active,
@@ -11368,7 +11368,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: darkslategrey;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
