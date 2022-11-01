@@ -11414,8 +11414,9 @@ html {
   background: #343a40;
 }
 <!-- Hamburger Menu-->
-svg {
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
   background-color: darkslategray !important;
+  z-index: 999;
 }
 
 .btn-xl {

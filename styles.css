@@ -15,6 +15,9 @@ html {
     padding: 0;
   }
   
+  i {
+    background: darkslategray !important;
+  }
   /* Navigation Bar
   nav {
     width: 100vw;
@@ -83,6 +86,7 @@ html {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    border-radius: 25%;
   }
 
   .projectlink:link {
