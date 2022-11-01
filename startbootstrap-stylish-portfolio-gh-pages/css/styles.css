@@ -11413,11 +11413,6 @@ html {
 .menu-toggle:hover {
   background: #343a40;
 }
-<!-- Hamburger Menu-->
-svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
-  background-color: darkslategray !important;
-  z-index: 999;
-}
 
 .btn-xl {
   padding: 1.25rem 2.5rem;

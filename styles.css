@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,43 +15,26 @@ html {
     margin: 0;
     padding: 0;
   }
-  
-  i {
-    background: darkslategray !important;
-  }
-  /* Navigation Bar
-  nav {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; 
-    position: fixed;
-    padding-top: 10px;
-    height: 35px;
-    list-style-type: none;
-    align-items: center;
-  }
 
-  /* Navigation Bar Links
-  nav li {
-    display: inline;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  nav li:hover:not(.active) {
-    font-weight: bold;
-  }
-
-
-  .nav-link {
-    text-align: center;
-    font-size: 20px;
+  a {
     text-decoration: none;
-    color:darkslateblue
-  } */
-  
+  }
+    /* Home Section */
+    #home {
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: static;
+      padding-bottom: 10px;
+      align-items: center;
+    }
+
+    p.introduction {
+      font-style: italic;
+    }
+
   /* About Section */
   #about {
     height: 100vh;
@@ -62,9 +46,28 @@ html {
     padding-bottom: 10px;
     align-items: center;
   }
-  
-  p.introduction {
-    font-style: italic;
+  <!-- Hamburger Menu-->
+  svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    background-color: darkslategray !important;
+    z-index: 999;
+  }
+<!--social-icons-->
+  svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa, .social-link {
+    background-color: transparent !important;
+  }
+  a.social-link {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+  }
+
+  a.social-link:hover {
+  opacity: 0.7;
+  color:lightblue;
   }
   
   /* Project Section */
@@ -209,33 +212,6 @@ html {
     transform: scale(1.5);
   }
 }
-
-  /* Contact Section */
-  #contact-section {
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    border-bottom: darkslateblue;
-    border-style: solid;
-  }
-
-  #icon-social-linkedin {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    background: #007bb5;
-    color: white;
-  }
-
-  #icon-social-linkedin:hover {
-  opacity: 0.7;
-  }
 
   footer {
     text-align: center;
