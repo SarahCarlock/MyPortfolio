@@ -53,16 +53,16 @@ html {
   }
 <!--social-icons-->
   svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa, .social-link {
-    background-color: transparent !important;
+    background-color: white !important;
   }
   a.social-link {
-    padding: 20px;
-    font-size: 30px;
-    width: 100px;
+    font-size: 50px;
+    width: 70px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    color: white;
+
+    color: blue;
+    border-radius: 25%;
   }
 
   a.social-link:hover {
