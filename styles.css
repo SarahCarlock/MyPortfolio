@@ -42,7 +42,7 @@ html {
       z-index: 999;
     }
 
-    .fa-bars {
+    .fa-bars, .fa-xmark {
       background-color: darkslategray;
     }
 
