@@ -19,6 +19,7 @@ html {
   a {
     text-decoration: none;
   }
+
     /* Home Section */
     #home {
       height: 100vh;
@@ -35,32 +36,55 @@ html {
       font-style: italic;
     }
 
+    <!-- Hamburger Menu-->
+    svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa :not(.socialbox){
+      background-color: darkslategray !important;
+      z-index: 999;
+    }
+
+    .fa-bars {
+      background-color: darkslategray;
+    }
+
   /* About Section */
   #about {
     height: 100vh;
     text-align: center;
-    display: flex;
+    display: block;
     justify-content: space-around;
     flex-wrap: wrap;
     position: static;
     padding-bottom: 10px;
     align-items: center;
   }
-  <!-- Hamburger Menu-->
-  svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
-    background-color: darkslategray !important;
-    z-index: 999;
+
+  <!--social-icons-->
+  #socialconnections {
+    top: 30%;
   }
-<!--social-icons-->
-  a.social-link {
-    font-size: 50px;
-    width: 70px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+  .socialbox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
   }
 
-  a.social-link:hover {
+  .social-link {
+    text-decoration: none;
+  }
+
+a. social-link {
+  color: blue;
+}
+  #linkedin {
+    font-size: 100px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  #linkedin:hover {
   opacity: 0.7;
   color:lightblue;
   }
