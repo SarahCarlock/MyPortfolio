@@ -1,0 +1,45 @@
+const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
+
+const onlyNumbers = things.filter(thing => {
+  return typeof thing === 'number';
+});
+
+console.log(onlyNumbers);
+
+
+
+
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(randomNumbers => {
+  return randomNumbers < 250;
+});
+
+
+
+
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(favoriteWords => {
+  return favoriteWords.length > 7;
+});
+
+
+
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+console.log(words.some((word) => {
+  return word.length < 6;
+}));
+
+const interestingWords = words.filter(words => {
+  return words.length > 5;
+});
+
+console.log(interestingWords.every((word) => {
+    return word.length > 5;
+  }));
+  
+  console.log(interestingWords);

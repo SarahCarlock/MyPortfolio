@@ -1,0 +1,13 @@
+const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
+
+artists.forEach(artist => {
+  console.log(artist + ' is one of my favorite artists.');
+});
+
+
+
+
+
+fruits.forEach(function(fruitItem) {
+    console.log('I want to eat a ' + fruitItem);
+  });

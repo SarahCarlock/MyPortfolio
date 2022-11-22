@@ -1,0 +1,17 @@
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+// Write your code below
+
+let greenEnergy = objectParam => {
+  objectParam['Fuel Type'] = 'avocado oil'
+};
+
+let remotelyDisable = objectParam => {
+  objectParam.disabled = true
+};
+greenEnergy(spaceship);
+remotelyDisable(spaceship);
+console.log(spaceship);
