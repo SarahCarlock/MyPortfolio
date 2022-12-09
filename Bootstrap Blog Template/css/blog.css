@@ -4,7 +4,10 @@ body {
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-    font-family: fantasy !important;
+    font-family: Lucida Handwriting !important;
 }
 
-#mainNav 
+header.masthead .page-heading h1, header.masthead .page-heading .h1, header.masthead .site-heading h1, header.masthead .site-heading .h1  {
+    font-style: italic;
+    font-family:Lucida Handwriting, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
