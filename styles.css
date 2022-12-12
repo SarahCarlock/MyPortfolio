@@ -97,7 +97,12 @@ a. social-link {
     align-items: center;
     flex-wrap: wrap;
   }
-
+  
+  .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .project-tile {
     display: flex;
     flex-direction: row;
