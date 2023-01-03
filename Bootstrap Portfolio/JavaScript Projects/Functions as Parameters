@@ -1,0 +1,31 @@
+const nums = [1,2,3,4];
+const initializer = 90;
+
+const addItUp = nums.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+
+}, accumulator );
+console.log(addItUp);
+
+const addTwo = num => {
+    return num + 2;
+  }
+  
+  const checkConsistentOutput = (func, val) => {
+  let checkA = val + 2;
+  let checkB = func(val);
+  if (checkA === checkB) {
+    return func(val);
+  } else {
+    return 'inconsistent results';
+  }
+  }
+  
+  console.log(checkConsistentOutput(addTwo, 5));
+  
+
+  const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits below
+
+fruits.forEach(fruitItem => console.log('I want to eat a ' + fruitItem));
