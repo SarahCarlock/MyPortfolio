@@ -159,8 +159,8 @@ a. social-link {
 /* Spinner */
 .attempt {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 20%;
+  left: 30%;
   margin-left: -50px;
   margin-top: -50px;
 }
