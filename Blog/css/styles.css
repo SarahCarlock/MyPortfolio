@@ -11034,7 +11034,6 @@ blockquote {
 .form-floating label {
   color: #6c757d;
 }
-
 #mainNav {
   position: absolute;
   top: 0;
@@ -11091,8 +11090,8 @@ blockquote {
     position: fixed;
     top: -83px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px transparent;
+    background-color: transparent;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
@@ -11110,6 +11109,7 @@ blockquote {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
   }
+  */
 }
 
 footer {
