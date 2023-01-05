@@ -45,10 +45,11 @@
     left: 0;
     width: auto;
     z-index: 10;
+    overflow: hidden;
 }
 
 ul {
-    width: 20px;
+    width: 75px;
 }
 
 li {
@@ -69,9 +70,8 @@ li a {
 
 li a:hover:not(.active) {
     font-weight: bold;
-    font-size: 20px;
     text-decoration: none !important;
-    color:rgb(162, 153, 187);
+    color:rgb(233, 231, 237);
 }
 
 .yearcar, .yearcamp, .yearbaby, .yearestablished {
@@ -97,7 +97,7 @@ li a:hover:not(.active) {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     margin-right: 0;
 }
 
@@ -118,7 +118,7 @@ li a:hover:not(.active) {
     padding-top: 0;
 }
 
-.married {
+.married, .baby {
     font-size: 30px;
 }
 
