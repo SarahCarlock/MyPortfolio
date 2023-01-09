@@ -104,6 +104,7 @@ li a:hover:not(.active) {
     justify-content: center;
     height: auto;
     margin-right: 0;
+    padding-top: 10px;
 }
 
 .rowslim {
@@ -114,6 +115,11 @@ li a:hover:not(.active) {
     height: 100px;
 }
 
+.photo {
+    height: 100%;
+    width: auto;
+    border-radius: 10%;
+}
 .yearestablished {
     font-size: 50px;
     font-weight: bold;
