@@ -4,6 +4,8 @@
     color:rgb(162, 153, 187);
     margin: 0;
     padding: 0;
+    font-family: lucida handwriting;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
 }
 
 
@@ -18,6 +20,12 @@
     font-stretch: expanded;
     letter-spacing: 7px;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
+}
+
+.heading {
+    position: fixed !important;
+    background-color: transparent !important;
+    z-index: 30;
 }
 
 .carousel {
@@ -49,18 +57,22 @@
     top: 0;
     left: 0;
     width: auto;
-    z-index: 10;
+    z-index: 20;
     overflow: hidden;
+    background-color: transparent !important;
 }
 
-ul {
+.navlist {
     width: 75px;
+    z-index: 25;
+    background-color: transparent !important;
 }
 
-li {
+.navdates {
     display: block;
     text-align: left;
     width: 20;
+    background-color: transparent !important;
 }
 
 li a {
@@ -71,12 +83,15 @@ li a {
     font-family: lucida handwriting;
     font-size: 15px;
     color:rgb(162, 153, 187);
+    z-index: 20;
+    background-color: transparent !important;
 }
 
 li a:hover:not(.active) {
     font-weight: bold;
     text-decoration: none !important;
     color:rgb(233, 231, 237);
+    background-color: transparent !important;
 }
 
 .yearcar, .yearcamp, .yearbaby, .yearestablished {
@@ -104,7 +119,7 @@ li a:hover:not(.active) {
     justify-content: center;
     height: auto;
     margin-right: 0;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .rowslim {
@@ -120,6 +135,33 @@ li a:hover:not(.active) {
     width: auto;
     border-radius: 10%;
 }
+
+.photo_portrait {
+    height: 75%;
+    width: auto;
+    border-radius: 10%;
+}
+
+.full-photo {
+    background:url(page_pictures\tulipblackandwhite.JPG);
+    display: inline;
+    z-index: 0;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+
+}
+.full-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .yearestablished {
     font-size: 50px;
     font-weight: bold;
@@ -193,5 +235,5 @@ li a:hover:not(.active) {
     text-shadow: 1px 1px 2px black, 0 0 5px rgb(135, 135, 177), 0 0 5px rgb(36, 36, 66);
     margin-bottom: 0px;
     font-family: lucida handwriting;
-
+    background-color: transparent;
 }
