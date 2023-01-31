@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    background-color: tan;
+}
+
+:root {
+        /* CSS HEX */
+--amber: #ffbe0bff;
+--orange-pantone: #fb5607ff;
+--winter-sky: #ff006eff;
+--blue-violet: #8338ecff;
+--azure: #3a86ffff;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: underline;
+    font-size: 25px;
+    color: black;
+}
+
+h1 {
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+div.row {
+    display: block;
+    height: 100vh;
+    width: auto;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+div.flex-column {
+    display: inline-block;
+}
+
+.colorlabel {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.colors {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    border-radius: 30%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.font-name, .style-name {
+    font-size: 40px;
+    font-weight: 600;
+}
