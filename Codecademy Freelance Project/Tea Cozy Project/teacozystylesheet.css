@@ -60,6 +60,13 @@ div.mission, div.location {
     justify-content: center;
     flex-wrap: wrap;
 }
+#store {
+    top: 50px;
+}
+
+#location {
+    top: 20px;
+}
 
 .missionbackground {
     display: inline-flex;
@@ -103,6 +110,8 @@ div.tea-of-the-month {
     justify-content: center;
     flex-flow: row wrap;
     align-content: space-between;
+    padding: 100px 0;
+    margin-bottom: 30px;
 }
 
 div.tea-label {
@@ -133,6 +142,9 @@ div.menu-gallery {
     text-align: center;
   }
 
+  div.location {
+    padding-top: 100px;
+  }
 
   div.location-background {
     display: inline-flex;
