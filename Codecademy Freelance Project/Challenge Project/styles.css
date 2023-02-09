@@ -7,36 +7,68 @@
 html {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    background-image: url("EDITspongebobbackground.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
   }
+
 
 div.banner-container {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    background-color: teal;
-    height: 100%;
-    width: 100%;
-    text-align: center;
+    flex-flow: column wrap;
   }
 
-.banner-title {
+div.banner-title {
     position: absolute;
+    display: inline-flex;
+    padding-top: 5rem;
     width: 100%;
     top: 3rem;
     font-size: 2rem;
     z-index: 10;
+    justify-content: center;
 }
-
-.banner-container img {
-    position: absolute;
-    display: flex;
-    max-width: 80%;
-    height: auto;
-    z-index: -100;
-  }
 
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: greenyellow;
+    text-shadow: 2rem 2rem 2rem black, 0 0 2rem darkslategray;
+}
+
+div.banner-image {
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 3rem;
+}
+
+.banner-image img {
+    position: absolute;
+    display: inline-flex;
+    max-width: 50%;
+    height: auto;
+    z-index: -100;
+    box-shadow: 2rem 2rem 100rem black, 0 0 200rem darkslategray;
+    border-radius: 20%;
+  }
+
+  /*Tablet vertical*/
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    div.banner-title {
+        font-size: 2rem;
+        top: 0rem;
+        padding-top: 2rem;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.banner-title {
+        font-size: 16px;
+        top: 1rem;
+        padding-top: 1rem;
+    }
 }
