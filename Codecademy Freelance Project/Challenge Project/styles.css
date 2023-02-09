@@ -1,0 +1,42 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+div.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: teal;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+.banner-title {
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+.banner-container img {
+    position: absolute;
+    display: flex;
+    max-width: 80%;
+    height: auto;
+    z-index: -100;
+  }
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
