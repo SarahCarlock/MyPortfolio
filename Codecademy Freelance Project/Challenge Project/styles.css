@@ -3,51 +3,60 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
+
 html {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
     background-image: url("EDITspongebobbackground.jpg");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
   }
 
+nav.nav-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+nav li {
+    display: block;
+    padding: 0 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: mediumaquamarine;
+    font-size: 2.5rem;
+    text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
+}
 
 div.banner-container {
-    display: flex;
-    flex-flow: column wrap;
+    display: block;
+    height: auto;
   }
 
-div.banner-title {
-    position: absolute;
-    display: inline-flex;
-    padding-top: 5rem;
-    width: 100%;
-    top: 3rem;
-    font-size: 2rem;
-    z-index: 10;
-    justify-content: center;
-}
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: greenyellow;
-    text-shadow: 2rem 2rem 2rem black, 0 0 2rem darkslategray;
-}
-
 div.banner-image {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    overflow: hidden;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
-.banner-image img {
-    position: absolute;
-    display: inline-flex;
+div.banner-image img {
+    position: relative;
+    display: flex;
     max-width: 50%;
     height: auto;
     z-index: -100;
@@ -55,20 +64,83 @@ div.banner-image {
     border-radius: 20%;
   }
 
+  div.banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+div.banner-title h1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: greenyellow;
+    font-size: 2rem;
+    text-shadow: 1rem 1rem 2rem black, 0 0 2rem darkslategray;
+}
+
+div.banner-title h2 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 70%;
+    color: rgb(12, 69, 87);
+    font-size: 1rem;
+    text-shadow: 1rem 0rem 1rem black;
+    border-radius: 50%;
+    background-color: tan;
+}
+
   /*Tablet vertical*/
 @media only screen and (min-width:768px) and (max-width: 1023px) {
-    div.banner-title {
+    nav li a {
+        text-decoration: none;
+        color: mediumaquamarine;
         font-size: 2rem;
-        top: 0rem;
-        padding-top: 2rem;
+        padding: 0 .75rem;
+        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
+    }
+    div.banner-title h1 {
+        font-size: 1.5rem;
+    }
+    div.banner-title h2 {
+        font-size: .75rem;
     }
 }
 
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
-    div.banner-title {
-        font-size: 16px;
-        top: 1rem;
-        padding-top: 1rem;
+    nav li a {
+        text-decoration: none;
+        color: mediumaquamarine;
+        font-size: 1.5rem;
+        padding: 0 .5rem;
+        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
+    }
+    div.banner-title h1 {
+        font-size: 1rem;
+    }
+    div.banner-title h2 {
+        font-size: .5rem;
+    }
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+    nav li a {
+        text-decoration: none;
+        color: mediumaquamarine;
+        font-size: .75rem;
+        padding: 0 .25rem;
+        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
+    }
+    div.banner-title h1 {
+        font-size: .75rem;
+    }
+    div.banner-title h2 {
+        font-size: .5rem;
+        text-align: center;
     }
 }
