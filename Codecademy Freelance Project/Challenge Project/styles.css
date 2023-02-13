@@ -17,7 +17,7 @@ html {
 nav.nav-container {
     display: flex;
     position: fixed;
-    width: 20%;
+    width: auto;
     height: 90%;
     justify-content: center;
 }
@@ -33,7 +33,7 @@ nav ul {
 
 nav li {
     display: block;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 nav li a {
@@ -89,8 +89,6 @@ div.banner-title h2 {
     width: 50%;
     color: rgb(12, 69, 87);
     font-size: 1rem;
-    border-radius: 50%;
-    background-color: tan;
 }
 
   /*Tablet vertical*/
@@ -112,6 +110,7 @@ div.banner-title h2 {
 
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
+
     nav li a {
         text-decoration: none;
         color: mediumaquamarine;
