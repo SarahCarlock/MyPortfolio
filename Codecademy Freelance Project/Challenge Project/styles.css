@@ -151,12 +151,15 @@ div.grid-container {
     padding: 5rem;
     margin: 4rem;
     gap: 2rem;
-
 }
 
 div.grid-item {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.grid-item img {
     height: 10rem;
     width: 10rem;
-    overflow: hidden;
 }
