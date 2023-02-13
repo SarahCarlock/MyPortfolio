@@ -40,7 +40,7 @@ nav li a {
     text-decoration: none;
     color: mediumaquamarine;
     font-size: 2rem;
-    text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
 
 div.banner-container {
@@ -60,7 +60,7 @@ div.banner-image img {
     max-width: 50%;
     height: auto;
     z-index: -100;
-    box-shadow: 2rem 2rem 100rem black, 0 0 200rem darkslategray;
+    box-shadow: 3rem 3rem 5rem black, 3rem 3rem 10rem darkslategray;
     border-radius: 20%;
   }
 
@@ -79,7 +79,10 @@ div.banner-title h1 {
     padding: 1rem;
     color: greenyellow;
     font-size: 3.75rem;
-    text-shadow: 1rem 1rem 2rem black, 0 0 2rem darkslategray;
+    text-shadow: -1rem 1rem 1rem black,
+                1rem 1rem 1rem black,
+                 1rem -1rem 1rem black,
+                -1rem -1rem 1rem black;
 }
 
 div.banner-title h2 {
@@ -88,8 +91,9 @@ div.banner-title h2 {
     text-align: center;
     padding: 1rem;
     width: 50%;
-    color: rgb(12, 69, 87);
+    color: mediumaquamarine;
     font-size: 1rem;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
   /*Laptop Vertical*/
   @media only screen and (max-width: 1023px) {
@@ -152,7 +156,7 @@ div.banner-title h2 {
     }
 }
 
-/*Mission Container*/
+/*Product Container*/
 div.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -171,6 +175,8 @@ div.grid-item {
 div.grid-item img {
     height: 10rem;
     width: 10rem;
+    border-radius: 50%;
+    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
 }
 
 /*Tablet vertical*/
