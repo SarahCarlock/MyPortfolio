@@ -16,9 +16,9 @@ html {
 nav.nav-container {
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 20%;
+    height: 90%;
     justify-content: center;
-    margin: 1rem 0rem;
 }
 
 nav ul {
@@ -26,13 +26,13 @@ nav ul {
     margin: 0;
     padding: 0;
     display: inline-flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
 nav li {
     display: block;
-    padding: 0 2rem;
+    padding: 2rem;
 }
 
 nav li a {
@@ -151,6 +151,7 @@ div.grid-container {
     padding: 5rem;
     margin: 4rem;
     gap: 2rem;
+    align-items: center;
 }
 
 div.grid-item {
@@ -162,4 +163,52 @@ div.grid-item {
 div.grid-item img {
     height: 10rem;
     width: 10rem;
+}
+
+/*Tablet vertical*/
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.grid-container {
+        grid-template-columns: auto auto;
+        padding: 50px;
+    }
+}
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+    div.grid-container {
+        padding: 50px;
+    }
+}
+/*TEENY Screen*/
+@media only screen and (max-width: 530px) {
+    div.grid-container {
+        grid-template-columns: auto;
+        padding: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet vertical*/
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
 }
