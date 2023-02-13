@@ -11,6 +11,7 @@ html {
     background-image: url("EDITspongebobbackground.jpg");
     background-repeat: repeat;
     background-position: center;
+    background-attachment: fixed;
   }
 
 nav.nav-container {
@@ -83,11 +84,11 @@ div.banner-title h1 {
 div.banner-title h2 {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 1rem;
-    width: 70%;
+    width: 50%;
     color: rgb(12, 69, 87);
     font-size: 1rem;
-    text-shadow: 1rem 0rem 1rem black;
     border-radius: 50%;
     background-color: tan;
 }
