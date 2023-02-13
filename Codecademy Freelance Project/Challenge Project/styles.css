@@ -28,7 +28,7 @@ nav ul {
     padding: 0;
     display: inline-flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: start;
 }
 
 nav li {
@@ -39,7 +39,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: mediumaquamarine;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
 }
 
@@ -70,6 +70,7 @@ div.banner-image img {
     align-items: center;
     width: 100%;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 div.banner-title h1 {
@@ -77,7 +78,7 @@ div.banner-title h1 {
     justify-content: center;
     padding: 1rem;
     color: greenyellow;
-    font-size: 2rem;
+    font-size: 3.75rem;
     text-shadow: 1rem 1rem 2rem black, 0 0 2rem darkslategray;
 }
 
@@ -90,18 +91,22 @@ div.banner-title h2 {
     color: rgb(12, 69, 87);
     font-size: 1rem;
 }
-
+  /*Laptop Vertical*/
+  @media only screen and (max-width: 1023px) {
+    div.banner-title h1 {
+        font-size: 3.25rem;
+    }
+  }
   /*Tablet vertical*/
-@media only screen and (min-width:768px) and (max-width: 1023px) {
+@media only screen and (max-width: 949px) {
     nav li a {
-        text-decoration: none;
-        color: mediumaquamarine;
-        font-size: 2rem;
+        font-size: 1.75rem;
         padding: 0 .75rem;
-        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
     }
     div.banner-title h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        width: 31.25rem;
+        text-align: center;
     }
     div.banner-title h2 {
         font-size: .75rem;
@@ -110,33 +115,36 @@ div.banner-title h2 {
 
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
-
     nav li a {
-        text-decoration: none;
-        color: mediumaquamarine;
-        font-size: 1.5rem;
         padding: 0 .5rem;
-        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
     }
     div.banner-title h1 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
     div.banner-title h2 {
         font-size: .5rem;
     }
 }
 
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+    nav li a {
+        font-size: 1.5rem;
+    }
+        div.banner-title h2 {
+        font-size: .5rem;
+        text-align: center;
+    }
+}
+
 /*TEENY Screen*/
 @media only screen and (max-width: 460px) {
     nav li a {
-        text-decoration: none;
-        color: mediumaquamarine;
         font-size: .75rem;
         padding: 0 .25rem;
-        text-shadow: 2rem 2rem 2rem black, 0rem 0rem 2rem darkslategray;
     }
     div.banner-title h1 {
-        font-size: .75rem;
+        font-size: 2rem;
     }
     div.banner-title h2 {
         font-size: .5rem;
