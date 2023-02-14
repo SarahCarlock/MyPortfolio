@@ -43,6 +43,11 @@ nav li a {
     text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
 
+nav li a:hover {
+    font-weight: bold;
+    color:rgb(173, 222, 205);
+}
+
 div.banner-container {
     display: block;
     height: auto;
