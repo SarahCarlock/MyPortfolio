@@ -245,6 +245,7 @@ div.team-group-container {
     gap: 2rem;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
 
 div.team-individual-container {
@@ -267,8 +268,9 @@ div.team-pic img {
 
 div.team-info {
     color: greenyellow;
-    height: 10rem;
+    height: 2rem;
     width: 20rem;
+    text-align: center;
 }
 
 div.team-title {
