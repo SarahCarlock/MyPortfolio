@@ -178,13 +178,15 @@ div.mission-statement h2{
 }
 
 /*Product Container*/
-div.grid-container {
+div#product-container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 5rem;
     margin: 4rem;
     gap: 2rem;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 div.grid-item {
@@ -226,9 +228,30 @@ div.grid-item img {
     }
 }
 
+/*Team Container*/
+div#team-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5rem;
+    margin: 4rem;
+    gap: 2rem;
+    align-items: center;
+}
+div.team-group-container {
+    display: flex;
 
+}
+div.team-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+div.team-pic img {
+    height: 20rem;
+    width: 20rem;
+    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
+}
 
 
 
