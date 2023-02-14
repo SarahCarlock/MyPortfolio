@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    width: 100vw;
 }
 
 html {
@@ -48,18 +49,32 @@ nav li a:hover {
     color:rgb(173, 222, 205);
 }
 
-div.banner-container {
+/*Basics*/
+h1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: greenyellow;
+    font-size: 3.75rem;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+}
+
+div.container {
     display: block;
     height: auto;
-  }
+    width: 100%;
+}
 
-div.banner-image {
+/*Home Container*/
+div.home-image {
     display: flex;
     justify-content: center;
     padding-top: 4rem;
 }
 
-div.banner-image img {
+div.home-image img {
     position: relative;
     display: flex;
     max-width: 50%;
@@ -69,6 +84,8 @@ div.banner-image img {
     border-radius: 20%;
   }
 
+  /*Mission Container*/
+
 div.banner-title {
     display: flex;
     justify-content: center;
@@ -76,16 +93,6 @@ div.banner-title {
     width: 100%;
     flex-direction: column;
     margin-top: 5rem;
-}
-
-div.banner-title h1 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    padding: 1rem;
-    color: greenyellow;
-    font-size: 3.75rem;
-    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
 
 div.mission-statement {
@@ -111,78 +118,21 @@ div.mission-statement h2{
     text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
 
-  /*Laptop Vertical*/
-  @media only screen and (max-width: 1023px) {
-    div.banner-title h1 {
-        font-size: 3.25rem;
-    }
-  }
-
-  /*Tablet vertical*/
-@media only screen and (max-width: 949px) {
-    nav li a {
-        font-size: 1.75rem;
-        padding: 0 .75rem;
-    }
-    div.banner-title h1 {
-        font-size: 3rem;
-        width: 31.25rem;
-        text-align: center;
-    }
-    div.mission-statement h2 {
-        font-size: 1.25rem;
-    }
-}
-
-/*Smartphone*/
-@media only screen and (max-width: 767px) {
-    nav li a {
-        padding: 0 .5rem;
-    }
-    div.banner-title h1 {
-        font-size: 3rem;
-    }
-    div.mission-statement h2 {
-        font-size: 1rem;
-    }
-}
-
-/*Mid-Point break for grid*/
-@media only screen and (max-width: 640px) {
-    nav li a {
-        font-size: 1.5rem;
-    }
-    div.banner-title h1 {
-        font-size: 2rem;
-        width: 60%;
-    }
-    div.mission-statement h2 {
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-
-/*TEENY Screen*/
-@media only screen and (max-width: 460px) {
-    nav li a {
-        font-size: .75rem;
-        padding: 0 .25rem;
-    }
-    div.banner-title h1 {
-        font-size: 2rem;
-    }
-    div.mission-statement h2 {
-        font-size: .75rem;
-        text-align: center;
-    }
-}
-
 /*Product Container*/
-div#product-container {
+div.product-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+div.product-grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 5rem;
-    margin: 4rem;
+    margin: 0 4rem 4rem 4rem;
     gap: 2rem;
     align-items: center;
     align-content: center;
@@ -204,7 +154,6 @@ div.grid-item img {
 
 /*Tablet vertical*/
 @media only screen and (min-width:768px) and (max-width: 1023px) {
-
 }
 
 /*Smartphone*/
@@ -229,50 +178,6 @@ div.grid-item img {
 }
 
 /*Team Container*/
-div#team-container {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    padding: 5rem;
-    margin: 4rem;
-    gap: 2rem;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-div.team-group-container {
-    display: inline-flex;
-    flex-flow: row wrap;
-    gap: 2rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-div.team-individual-container {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 2rem;
-    align-items: center;
-    align-content: center;
-}
-div.team-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.team-pic img {
-    height: 10rem;
-    width: 10rem;
-}
-
-div.team-info {
-    color: greenyellow;
-    height: 2rem;
-    width: 20rem;
-    text-align: center;
-}
-
 div.team-title {
     display: flex;
     justify-content: center;
@@ -282,28 +187,119 @@ div.team-title {
     margin-top: 5rem;
 }
 
-div.team-title h1 {
+div.team-grid-container {
+    display: grid;
+    padding: 5rem;
+    margin: 4rem;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div.team-group-container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+div.team-individual-container {
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    padding: 1rem;
+    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
+}
+div.team-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.team-pic img {
+    height: 14rem;
+    width: 10rem;
+    padding-bottom: 2rem;
+}
+
+div.team-info {
     color: greenyellow;
-    font-size: 3.75rem;
-    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+    height: 2rem;
+    width: 20rem;
+    text-align: center;
 }
 
 
 
 
+/*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+  }
 
-/*Tablet vertical*/
-@media only screen and (min-width:768px) and (max-width: 1023px) {
+  /*Tablet vertical*/
+@media only screen and (max-width: 949px) {
+    nav li a {
+        font-size: 1.75rem;
+        padding: 0 .75rem;
+    }
+    h1 {
+        font-size: 3rem;
+        width: 31.25rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
 }
 
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
+    nav li a {
+        padding: 0 .5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+    nav li a {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 /*TEENY Screen*/
 @media only screen and (max-width: 460px) {
+    nav li a {
+        font-size: .75rem;
+        padding: 0 .25rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: .75rem;
+        text-align: center;
+    }
 }

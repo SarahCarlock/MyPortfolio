@@ -10,20 +10,24 @@
   </head>
 
   <body>
+    <nav class="nav-container">
+      <ul>
+        <li><a href="#home-container">Home</a></li>
+        <li><a href="#mission-container">Mission</a></li>
+        <li><a href="#product-container">Product</a></li>
+        <li><a href="#team-container">Team</a></li>
+      </ul>
+    </nav>
     <header>
-      <nav class="nav-container">
-        <ul>
-          <li><a href="#home-container">Home</a></li>
-          <li><a href="#mission-container">Mission</a></li>
-          <li><a href="#product-container">Product</a></li>
-          <li><a href="#team-container">Team</a></li>
-        </ul>
-      </nav>
-      <div class="banner-container" id="home-container">
-        <div class="banner-image">
+
+      <div class="container" id="home-container">
+        <div class="home-image">
           <img src="legospongebob.jpg" alt="Lego Spongebob and Patrick">
         </div>
-        <div class="banner-title" id="mission-container">
+      </div>
+
+      <div class="container" id="mission-container">
+        <div class="banner-title">
           <h1>Spongebob & Cahooots</h1>
         </div>
         <div class="mission-statement">
@@ -35,10 +39,15 @@
           <h2>and remember.</h2>
         </div>
       </div>
-
     </header>
+
     <main>
-      <div class="grid-container" id="product-container">
+
+    <div class="container" id="product-container">
+      <div class="product-title">
+        <h1>Our Products</h1>
+      </div>
+      <div class="product-grid-container" >
         <div class="grid-item">
           <img src="Shows/Ah_Real_Monsters.jpg">
         </div>
@@ -160,42 +169,46 @@
           <img src="Shows/Wild_Thornberrys.jpg">
         </div>
       </div>
-      <div class="grid-container" id="team-container">
-        <div class="team-title">
-          <h1>Meet our Team!</h1>
-        </div>
+    </div>
+
+  <div class="container" id="team-container">
+    <div class="team-title">
+      <h1>Meet our Team!</h1>
+    </div>
+      <div class="team-grid-container">
           <div class="team-group-container">
             <div class="team-individual-container" id="spongebob">
               <div class="team-pic"><img src="Team/spongebob.png" alt="Spongebob"></div>
-              <div class="team-info">Spongebob</div>
-              <div class="team-info">Chief Executive Officer/Owner</div>
+              <div class="team-info"><h2>Spongebob</h2></div>
+              <div class="team-info"><h2>Chief Executive Officer/Owner</h2></div>
             </div>
             <div class="team-individual-container" id="gary">
               <div class="team-pic"><img src="Team/gary.png" alt="Gary"></div>
-              <div class="team-info">Gary</div>
-              <div class="team-info">Chief Operating Officer/CoOwner</div>
+              <div class="team-info"><h2>Gary</h2></div>
+              <div class="team-info"><h2>Chief Operating Officer/CoOwner</h2></div>
             </div>
             <div class="team-individual-container" id="patrick" at>
               <div class="team-pic"><img src="Team/patrick.png" alt="Patrick"></div>
-              <div class="team-info">Patrick</div>
-              <div class="team-info">Chief Financial Officer</div>
+              <div class="team-info"><h2>Patrick</h2></div>
+              <div class="team-info"><h2>Chief Financial Officer</h2></div>
             </div>
             <div class="team-individual-container" id="sandy">
               <div class="team-pic"><img src="Team/sandycheeks.png" alt="Sandy"></div>
-              <div class="team-info">Sandy</div>
-              <div class="team-info">Chief Marketing Officer</div>
+              <div class="team-info"><h2>Sandy</h2></div>
+              <div class="team-info"><h2>Chief Marketing Officer</h2></div>
             </div>
             <div class="team-individual-container" id="squirdward">
               <div class="team-pic"><img src="Team/squidward.png" alt="Squidward"></div>
-              <div class="team-info">Squidward</div>
-              <div class="team-info">Chief Technology Officer</div>
+              <div class="team-info"><h2>Squidward</h2></div>
+              <div class="team-info"><h2>Chief Technology Officer</h2></div>
             </div>
             <div class="team-individual-container" id="plankton">
               <div class="team-pic"><img src="Team/plankton.png" alt="Plankton"></div>
-              <div class="team-info">Plankton</div>
-              <div class="team-info">President</div>
+              <div class="team-info"><h2>Plankton</h2></div>
+              <div class="team-info"><h2>President</h2></div>
             </div>
           </div>
+        </div>
       </div>
     </main>
   </body>
