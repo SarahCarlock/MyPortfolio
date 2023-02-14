@@ -64,7 +64,7 @@ div.banner-image img {
     border-radius: 20%;
   }
 
-  div.banner-title {
+div.banner-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +75,7 @@ div.banner-image img {
 
 div.banner-title h1 {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     padding: 1rem;
     color: greenyellow;
@@ -82,22 +83,36 @@ div.banner-title h1 {
     text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
 
-div.banner-title h2 {
+div.mission-statement {
+    margin: 10rem 10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
-    width: 50%;
+    background-color: rgba(105, 5, 155, 0.462);
+    border-radius: 50%;
+}
+
+.mission-statement:hover {
+    background-color: rgba(105, 5, 155, 0.986);
+}
+    
+div.mission-statement h2{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-style: italic;
     color: mediumaquamarine;
-    font-size: 1rem;
     text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
 }
+
   /*Laptop Vertical*/
   @media only screen and (max-width: 1023px) {
     div.banner-title h1 {
         font-size: 3.25rem;
     }
   }
+
   /*Tablet vertical*/
 @media only screen and (max-width: 949px) {
     nav li a {
@@ -109,8 +124,8 @@ div.banner-title h2 {
         width: 31.25rem;
         text-align: center;
     }
-    div.banner-title h2 {
-        font-size: .75rem;
+    div.mission-statement h2 {
+        font-size: 1.25rem;
     }
 }
 
@@ -122,8 +137,8 @@ div.banner-title h2 {
     div.banner-title h1 {
         font-size: 3rem;
     }
-    div.banner-title h2 {
-        font-size: .5rem;
+    div.mission-statement h2 {
+        font-size: 1rem;
     }
 }
 
@@ -132,8 +147,12 @@ div.banner-title h2 {
     nav li a {
         font-size: 1.5rem;
     }
-        div.banner-title h2 {
-        font-size: .5rem;
+    div.banner-title h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+    div.mission-statement h2 {
+        font-size: 1rem;
         text-align: center;
     }
 }
@@ -147,8 +166,8 @@ div.banner-title h2 {
     div.banner-title h1 {
         font-size: 2rem;
     }
-    div.banner-title h2 {
-        font-size: .5rem;
+    div.mission-statement h2 {
+        font-size: .75rem;
         text-align: center;
     }
 }
