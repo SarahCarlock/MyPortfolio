@@ -140,7 +140,7 @@ div.home-image img {
         width: 60%;
     }
     h2 {
-        font-size: 1rem;
+        font-size: .75rem;
         text-align: center;
     }
 }
@@ -155,7 +155,7 @@ div.home-image img {
         font-size: 2rem;
     }
     h2 {
-        font-size: .75rem;
+        font-size: .5rem;
         text-align: center;
     }
 }
@@ -171,10 +171,6 @@ div.banner-title {
 
 div.mission-statement {
     display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     text-align: center;
     width: 60%;
     margin-left: auto;
@@ -198,6 +194,22 @@ div.mission-statement h2{
     text-align: center;
     color: mediumaquamarine;
     text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+}
+
+/*Tablet vertical*/
+@media only screen and (max-width: 1023px) {
+}
+/*Smartphone*/
+@media only screen and (max-width: 800px) {
+    div.mission-statement h2{
+        line-height: 2.25rem;
+    }
+}
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+}
+/*TEENY Screen*/
+@media only screen and (max-width: 530px) {
 }
 
 /*Product Container*/
@@ -236,28 +248,19 @@ div.grid-item img {
 }
 
 /*Tablet vertical*/
-@media only screen and (min-width:768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
 }
-
 /*Smartphone*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
     div.product-grid-container {
         grid-template-columns: auto auto;
-        padding: 50px;
     }
 }
 /*Mid-Point break for grid*/
 @media only screen and (max-width: 640px) {
-    div.product-grid-container {
-        padding: 50px;
-    }
 }
 /*TEENY Screen*/
 @media only screen and (max-width: 530px) {
-    div.product-grid-container {
-        grid-template-columns: auto;
-        padding: 50px;
-    }
 }
 
 /*Team Container*/
