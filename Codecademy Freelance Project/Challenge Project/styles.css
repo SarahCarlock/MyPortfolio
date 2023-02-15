@@ -241,20 +241,20 @@ div.grid-item img {
 
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
-    div.grid-container {
+    div.product-grid-container {
         grid-template-columns: auto auto;
         padding: 50px;
     }
 }
 /*Mid-Point break for grid*/
 @media only screen and (max-width: 640px) {
-    div.grid-container {
+    div.product-grid-container {
         padding: 50px;
     }
 }
 /*TEENY Screen*/
 @media only screen and (max-width: 530px) {
-    div.grid-container {
+    div.product-grid-container {
         grid-template-columns: auto;
         padding: 50px;
     }
