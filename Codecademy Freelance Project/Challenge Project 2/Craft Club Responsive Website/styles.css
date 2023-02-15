@@ -1,0 +1,6 @@
+html {
+    display: block;
+    background-image: url(woodbackground.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
