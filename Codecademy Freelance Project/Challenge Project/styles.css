@@ -3,11 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    width: 100vw;
 }
 
 html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     background-image: url("EDITspongebobbackground.jpg");
     background-repeat: repeat;
@@ -15,12 +18,19 @@ html {
     background-attachment: fixed;
   }
 
+body header main {
+    margin: 0;
+    padding: 0;
+}
+
 nav.nav-container {
-    display: flex;
+    display: block;
     position: fixed;
+    top: 0;
+    left: 0;
     width: auto;
-    height: 90%;
-    justify-content: center;
+    height: auto;
+    padding-left: 1rem;
 }
 
 nav ul {
@@ -64,7 +74,7 @@ h1 {
 div.container {
     display: block;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 /*Home Container*/
@@ -84,161 +94,7 @@ div.home-image img {
     border-radius: 20%;
   }
 
-  /*Mission Container*/
-
-div.banner-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-
-div.mission-statement {
-    margin: 10rem 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(105, 5, 155, 0.462);
-    border-radius: 50%;
-}
-
-.mission-statement:hover {
-    background-color: rgba(105, 5, 155, 0.986);
-}
-    
-div.mission-statement h2{
-    font-size: 1.5rem;
-    line-height: 3rem;
-    font-style: italic;
-    color: mediumaquamarine;
-    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
-}
-
-/*Product Container*/
-div.product-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-
-div.product-grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5rem;
-    margin: 0 4rem 4rem 4rem;
-    gap: 2rem;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-div.grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.grid-item img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
-}
-
-/*Tablet vertical*/
-@media only screen and (min-width:768px) and (max-width: 1023px) {
-}
-
-/*Smartphone*/
-@media only screen and (max-width: 767px) {
-    div.grid-container {
-        grid-template-columns: auto auto;
-        padding: 50px;
-    }
-}
-/*Mid-Point break for grid*/
-@media only screen and (max-width: 640px) {
-    div.grid-container {
-        padding: 50px;
-    }
-}
-/*TEENY Screen*/
-@media only screen and (max-width: 530px) {
-    div.grid-container {
-        grid-template-columns: auto;
-        padding: 50px;
-    }
-}
-
-/*Team Container*/
-div.team-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-
-div.team-grid-container {
-    display: grid;
-    padding: 5rem;
-    margin: 4rem;
-    gap: 2rem;
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-div.team-group-container {
-    display: inline-flex;
-    flex-flow: row wrap;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto;
-    gap: 2rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-div.team-individual-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
-}
-div.team-pic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.team-pic img {
-    height: 14rem;
-    width: 10rem;
-    padding-bottom: 2rem;
-}
-
-div.team-info {
-    color: greenyellow;
-    height: 2rem;
-    width: 20rem;
-    text-align: center;
-}
-
-
-
-
-/*Laptop Vertical*/
+  /*Laptop Vertical*/
 @media only screen and (max-width: 1023px) {
     h1 {
         font-size: 3.25rem;
@@ -302,4 +158,198 @@ div.team-info {
         font-size: .75rem;
         text-align: center;
     }
+}
+  /*Mission Container*/
+
+div.banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+div.mission-statement {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(105, 5, 155, 0.462);
+    border-radius: 50%;
+}
+
+.mission-statement:hover {
+    background-color: rgba(105, 5, 155, 0.986);
+}
+    
+div.mission-statement h2{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-style: italic;
+    text-align: center;
+    color: mediumaquamarine;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+}
+
+/*Product Container*/
+div.product-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+div.product-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5rem;
+    margin: 0 4rem 4rem 4rem;
+    gap: 2rem;
+    width:auto;
+}
+
+div.grid-item {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 10rem;
+    width: 10rem;
+}
+
+div.grid-item img {
+    align-content: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
+}
+
+/*Tablet vertical*/
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.grid-container {
+        grid-template-columns: auto auto;
+        padding: 50px;
+    }
+}
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+    div.grid-container {
+        padding: 50px;
+    }
+}
+/*TEENY Screen*/
+@media only screen and (max-width: 530px) {
+    div.grid-container {
+        grid-template-columns: auto;
+        padding: 50px;
+    }
+}
+
+/*Team Container*/
+div.team-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+div.team-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 5rem;
+    margin: 4rem;
+    gap: 5rem;
+    width: auto;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+div.team-individual-container {
+    display: inline-flex;
+    flex-flow: column wrap;
+
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    width: auto;
+}
+
+img.team-pic {
+    height: 14rem;
+    width: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 3rem 3rem 3rem black, 3rem 3rem 5rem darkslategray;
+}
+
+h2.team-info  {
+    display: flex;
+    flex-flow: column wrap;
+    height: 2rem;
+    width: auto;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-style: italic;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: greenyellow;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+}
+
+h3 {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 3rem;
+    font-style: italic;
+    text-align: center;
+    color: mediumaquamarine;
+    text-shadow: 1rem 1rem 1rem black, 1rem 1rem 1rem darkslategray;
+}
+
+
+/*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+  }
+
+  /*Tablet vertical*/
+@media only screen and (max-width: 949px) {
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.team-grid-container {
+        gap: 6rem;
+    }
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
 }
