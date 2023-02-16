@@ -6,23 +6,22 @@
     font-size: 16px;
     font-family: Papyrus, sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background-image: url(woodbackground.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.nav {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    height: 4rem;
-}
-header {
-    display: flex;
-}
 h1 {
     display: flex;
     align-content: center;
@@ -33,6 +32,44 @@ div.container {
     flex-flow: row wrap;
     height: 5rem;
     width: auto;
+}
+
+/* Navigation Bar */
+.container-nav {
+    height: 5rem;
+    width: 100%;
+    padding-top: 1rem;
+    background-image: url("paper.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 1rem;
+    border-color: black;
+    border-style: ridge;
+}
+
+.grid-container-fluid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+.grid-item-nav {
+    
+}
+
+.grid-item-nav a {
+    color:rgb(51, 31, 12);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.grid-item-nav a:hover {
+    color: beige;
+}
+
+h1 {
+    font-size: 6rem;
 }
 
 img.item {
