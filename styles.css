@@ -23,6 +23,9 @@ html {
     align-items: center;
   }
 
+  .container {
+    
+  }
     /* Home Section */
     #home {
       height: 100vh;
@@ -94,7 +97,7 @@ a.social-link {
   
   /* Project Section */
   #portfolio {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,27 +106,29 @@ a.social-link {
   
   .projects {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    width: auto;
   }
   .project-tile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 200px;
-    width: 200px;
-    margin: 20px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    width: auto;
     border-radius: 25%;
+
   }
 
   .projectlink:link {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     text-decoration: none;
     color: darkslateblue;
     text-align: center;
     font-size: 50px;
+    height: 20rem;
+    width: 20rem;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 25%;
   }
 
   .projectlink:visited {
@@ -135,6 +140,34 @@ a.social-link {
   .projectlink:active {
     text-decoration: none;
   }
+
+  /*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+}
+
+/*Tablet vertical*/
+@media only screen and (max-width: 997px) {
+  #portfolio {
+    height: auto;
+  }
+  .projects {
+    height: auto;
+    width: auto;
+    flex-flow: row wrap;
+  }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+}
 
   /* Certificcation Section */
   #certifications {
