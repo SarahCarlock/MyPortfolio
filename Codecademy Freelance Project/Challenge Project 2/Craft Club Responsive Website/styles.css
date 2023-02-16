@@ -1,6 +1,40 @@
-html {
-    display: block;
-    background-image: url(woodbackground.jpg);
-    background-size: contain;
-    background-attachment: fixed;
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    font-family: Papyrus, sans-serif;
 }
+html {
+    background-image: url(woodbackground.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+}
+header {
+    display: flex;
+}
+h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+div.container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 5rem;
+    width: auto;
+}
+
+img.item {
+    height: 5rem;
+    width: auto;
