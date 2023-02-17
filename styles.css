@@ -23,9 +23,6 @@ html {
     align-items: center;
   }
 
-  .container {
-    
-  }
     /* Home Section */
     #home {
       height: 100vh;
@@ -141,8 +138,20 @@ a.social-link {
     text-decoration: none;
   }
 
+  div.project-section {
+    justify-content: space-evenly;
+  }
+
   /*Laptop Vertical*/
 @media only screen and (max-width: 1023px) {
+  #portfolio {
+    height: auto;
+  }
+  .projects {
+    height: auto;
+    width: auto;
+    flex-flow: row wrap;
+  }
 }
 
 /*Tablet vertical*/
