@@ -7,6 +7,13 @@
     font-family: Papyrus, sans-serif;
 }
 
+:root {
+    --main-shadow-color: rgba(41, 41, 41, 0.51);
+    --bg-shade: rgba(41, 41, 41, 0.766);
+    --slight-bg-shade: rgba(41, 41, 41, 0.337); 
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,14 +31,61 @@ html {
 
 h1 {
     display: flex;
-    align-content: center;
     justify-content: center;
+    font-size: 6rem;
 }
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 div.container {
     display: inline-flex;
     flex-flow: row wrap;
     height: auto;
     width: auto;
+}
+
+@media only screen and (max-width: 800px){
+    h1 {
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    header {
+        padding: 1rem !important;
+    }
+        h1 {
+        font-size: 3rem;
+    }
+    div.grid-item-nav a {
+            font-size: 1.25rem;
+    }
+    div.pictures {
+        margin: 4rem !important;;
+    }
+}
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    div.grid-item-nav a {
+        font-size: 1rem;
+}
 }
 
 /* Navigation Bar */
@@ -42,12 +96,10 @@ div.container {
     background-image: url("paper.jpg");
     background-position: center;
     background-attachment: fixed;
-    border-bottom: 1rem;
-    border-color: black;
-    border-style: ridge;
+    box-shadow: 3rem 3rem 3rem var(--main-shadow-color);
 }
 
-.grid-container-fluid{
+.grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-evenly;
@@ -64,25 +116,22 @@ div.container {
     color: beige;
 }
 
-h1 {
-    font-size: 6rem;
+/*Title */
+header {
+    padding: 3rem;
 }
 
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
+/* Pictures */
 div.pictures {
     display: flex;
     justify-content: space-around;
+    box-shadow: 3rem 3rem 3rem var(--main-shadow-color), 
+    -3rem -3rem 3rem var(--main-shadow-color),
+    -3rem 3rem 3rem var(--main-shadow-color),
+    3rem -3rem 3rem var(--main-shadow-color);
+    background-color: var(--bg-shade);
+    margin: 5rem;
+    border-radius: 50%;
 }
 
 img.item {
@@ -91,6 +140,37 @@ img.item {
 }
 
 img.item:hover {
-    height: 35rem;
+    height: 20rem;
 
 } 
+
+/* Quotes */
+div.quote {
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    margin: 5rem 0;
+    background-color: var(--slight-bg-shade);
+    border-radius: 25%;
+}
+
+h3.quotation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h4.source {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-bottom-nav {
+    height: 5rem;
+    width: 100%;
+    padding-top: 1rem;
+    background-image: url("paper.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 3rem 3rem 3rem var(--main-shadow-color);
+}
