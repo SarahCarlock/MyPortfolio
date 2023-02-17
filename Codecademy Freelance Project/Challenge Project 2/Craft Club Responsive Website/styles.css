@@ -28,9 +28,9 @@ h1 {
     justify-content: center;
 }
 div.container {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
-    height: 5rem;
+    height: auto;
     width: auto;
 }
 
@@ -53,10 +53,6 @@ div.container {
     justify-content: space-evenly;
 }
 
-.grid-item-nav {
-    
-}
-
 .grid-item-nav a {
     color:rgb(51, 31, 12);
     font-weight: bold;
@@ -72,6 +68,29 @@ h1 {
     font-size: 6rem;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+div.pictures {
+    display: flex;
+    justify-content: space-around;
+}
+
 img.item {
-    height: 5rem;
+    height: 7rem;
     width: auto;
+}
+
+img.item:hover {
+    height: 35rem;
+
+} 
