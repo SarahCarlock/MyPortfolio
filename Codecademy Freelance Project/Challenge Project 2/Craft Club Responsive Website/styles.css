@@ -14,21 +14,24 @@
 
 }
 
-body {
+html {
     margin: 0;
     padding: 0;
 }
 
-html {
+body {
+    margin: 0;
+    padding: 0;
     background-image: url(woodbackground.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
+body::before {
+    opacity: 0;
+}
 h1 {
     display: flex;
     justify-content: center;
@@ -142,18 +145,25 @@ img.L {
     height: 7rem;
     width: auto;
     overflow: hidden;
+    border: .2rem solid var(--main-shadow-color);
 }
 
 img.P {
     height: 7auto;
     width: 7rem;
     overflow: hidden;
+    border: .2rem solid var(--main-shadow-color);
 }
 
-img.item:hover {
+img.L:hover {
     height: 20rem;
+    border:1rem solid white;
+}
 
-} 
+img.P:hover {
+    width: 20rem;
+    border:1rem solid white;
+}
 
 /* Quotes */
 div.quote {
