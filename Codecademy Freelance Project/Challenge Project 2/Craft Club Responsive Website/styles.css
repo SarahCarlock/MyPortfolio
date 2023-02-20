@@ -97,6 +97,7 @@ div.container {
     background-position: center;
     background-attachment: fixed;
     box-shadow: 3rem 3rem 3rem var(--main-shadow-color);
+    border-bottom: .2rem solid black;
 }
 
 .grid-container{
@@ -124,7 +125,9 @@ header {
 /* Pictures */
 div.pictures {
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
     box-shadow: 3rem 3rem 3rem var(--main-shadow-color), 
     -3rem -3rem 3rem var(--main-shadow-color),
     -3rem 3rem 3rem var(--main-shadow-color),
@@ -132,11 +135,19 @@ div.pictures {
     background-color: var(--bg-shade);
     margin: 5rem;
     border-radius: 50%;
+    gap: 1rem
 }
 
-img.item {
+img.L {
     height: 7rem;
     width: auto;
+    overflow: hidden;
+}
+
+img.P {
+    height: 7auto;
+    width: 7rem;
+    overflow: hidden;
 }
 
 img.item:hover {
@@ -173,4 +184,5 @@ h4.source {
     background-position: center;
     background-attachment: fixed;
     box-shadow: 3rem 3rem 3rem var(--main-shadow-color);
+    border-top: .2rem solid black;
 }
