@@ -1,0 +1,17 @@
+// Write your function here:
+const howOld = (age, year) => {
+    //calculating current year.
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+
+  const yearDifference = year - currentYear
+  const newAge = age + yearDifference
+
+if (newAge > age) {
+  return `You will be ${newAge} in the year ${year}`
+} else if (newAge < 0) {
+  return `The year ${year} was ${-newAge} years before you were born`
+} else {
+  return `You were ${newAge} in the year ${year}`
+}
+}

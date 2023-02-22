@@ -1,0 +1,27 @@
+
+function calculateWeight(earthWeight, planet) {
+let weight;
+if (planet === 'Mercury') {
+weight = earthWeight * 0.378;
+return weight;
+}if(planet === 'Venus') {
+weight = earthWeight * 0.907;
+return weight;
+}if(planet === 'Mars') {
+weight = earthWeight * 0.377;
+return weight;
+}if(planet === 'Jupiter') {
+weight = earthWeight * 2.36;
+return weight;
+}if(planet === 'Saturn') {
+weight = earthWeight * 0.916;
+return weight;
+} else {
+return 'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.';
+};
+}
+
+
+
+
+console.log(calculateWeight(100, 'Jupiter')) // Should print 236
