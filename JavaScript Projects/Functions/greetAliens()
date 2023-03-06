@@ -1,0 +1,19 @@
+// Write your code here:
+
+function greetAliens(aliens) {
+ 
+  for (let alien of aliens) {
+    console.log(`Oh powerful ${alien}, we humans offer our unconditional surrender!`);
+  }
+}
+
+
+
+
+
+
+
+const aliens = ["Blorgous", "Glamyx", "Wegord", "SpaceKing"];
+
+greetAliens(aliens);
+

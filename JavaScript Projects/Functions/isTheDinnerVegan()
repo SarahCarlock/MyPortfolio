@@ -1,0 +1,16 @@
+
+const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'dairy'}, {name: 'ketchup', source:'plant'}, {name: 'bun', source: 'plant'}, {name: 'dessert twinkies', source:'unknown'}];
+
+
+
+const isTheDinnerVegan = dinner => {
+  if (dinner.every(dinner => dinner.source === 'plant')) {
+    return true;
+  } 
+  return false;
+}
+
+
+
+console.log(isTheDinnerVegan(dinner));
+// Should print false

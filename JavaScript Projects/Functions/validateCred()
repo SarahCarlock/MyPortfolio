@@ -1,0 +1,46 @@
+const findInvalidCards = (arrayOfCards) => {
+    const invalidArray = []
+
+    for (let i = 0; i < arrayOfCards.length; i++) {
+        const checker = validateCred(arrayOfCards[i])
+        if (checker === 'invalid') {
+            invalidArray.push(arrayOfCards[i])
+        }   
+    }
+    console.log(`invalidArrayLength: ${invalidArray.length}`)
+    return invalidArray
+    
+}
+
+const idInvalidCardCompanies = (arrayOfArrays) => {
+    let companyNames = []
+    
+
+    for (let k = 0; k < arrayOfArrays.length; k++) {
+        let array = arrayOfArrays[k]
+        if (array[0] === 3) {
+            companyNames.push('Amex (American Express')
+        }
+        else if ((array[0] === 4)) {
+            companyNames.push('Visa')
+        }
+        else if ((array[0] === 5)) {
+            companyNames.push('Mastercard')
+        }
+        else if ((array[0] === 6)) {
+            companyNames.push('Discover')
+        }
+    }
+    return companyNames
+}
+
+
+//console.log(`Validate Cred: ${validateCred(invalid1)}`)
+/*findInvalidCards(batch).forEach((a) => {
+    console.log(`Array of Invalid Cards: [${a}]`)
+})*/
+
+const invalidCards = findInvalidCards(batch)
+console.log(invalidCards)
+
+console.log(idInvalidCardCompanies(invalidCards))

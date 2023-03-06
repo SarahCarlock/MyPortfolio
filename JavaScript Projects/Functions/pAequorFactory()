@@ -1,0 +1,85 @@
+// Returns a random DNA base
+const returnRandBase = () => {
+  const dnaBases = ["A", "T", "C", "G"];
+  return dnaBases[Math.floor(Math.random() * 4)];
+};
+
+// Returns a random single stand of DNA containing 15 bases
+const mockUpStrand = () => {
+  const newStrand = [];
+  for (let i = 0; i < 15; i++) {
+    newStrand.push(returnRandBase());
+  }
+  return newStrand;
+};
+
+const pAequorFactory = (num, bases) => {
+  return {
+    specimenNum: num,
+    dna: bases,
+    mutate() {
+      let i = Math.floor(Math.random() * this.dna.length);
+      let oldBase = this.dna[i];
+
+      let altBases = ["A", "T", "C", "G"];
+      altBases.splice(altBases.indexOf(oldBase), 1);
+      let mutatedBase = altBases[Math.floor(Math.random() * 3)];
+        return this.dna.splice(i, 1, mutatedBase);
+      },
+    compareDna(otherPAequor) {
+      let count = 0;
+      for (let i = 0; i < this.dna.length; i++) {
+        if (this.dna[i] == otherPAequor.dna) {
+          count += 1;
+        }
+      }
+//console.log(`Specimen # ${this.specimenNum} has ${(count * 100) / this.dna.length}% DNA bases in common with #${otherPAqeour.specimenNum}.`);
+    },
+    willLikelySurvive(dnaArr) {
+      const cAndG = this.dna.filter(letter => letter === 'C' || letter === 'G');
+        if (cAndG.length/this.dna.length > 0.6) {
+          return true;
+        } else {
+          return false;
+        }
+    },
+    complementStrand() {
+      const compCAndG = this.dna[0].filter(letter => letter === 'C' || letter === 'G');
+      const compAAndT = this.dna[0].filter(letter => letter === 'A' || letter === 'T');
+      let compStrand = this.dna[Math.floor(Math.random() * 14)];
+      if (this.dna[0] === 'C') {
+        compCAndG.push(this.dna);
+        let partner = this.dna.splice(1, 0, compStrand);
+        compCAndG.push('G', 0, partner);
+      } else if (this.dna[0] === 'G') {
+        compCAndG.push(this.dna);
+        let partner = this.dna.splice(1, 0, compStrand);
+        compCAndG.push('C', 0, partner);
+      } else if (this.dna[0] === 'A') {
+        compAAndT.push(this.dna);
+        let partner = this.dna.splice(1, 0, compStrand);
+        compAAndT.push('T', 0, partner);
+      }  else if (this.dna[0] === 'T') {
+        compAAndT.push(this.dna);
+        let partner = this.dna.splice(1, 0, compStrand);
+        compAAndT.push('A', 0, partner);
+    }
+    } 
+  }//return end
+  
+};//pAequorFactory end
+let pAequor = [];
+let sample = [];
+let i = 0;
+while (sample.length < 30) {
+  let temp = pAequorFactory(i, mockUpStrand());
+  if (temp.willLikelySurvive() == true) {
+    sample.push(temp);
+    i += 1
+  }
+};
+const specimen69 = pAequorFactory(69, mockUpStrand());
+console.log(specimen69.dna);
+console.log(specimen69.mutate());
+console.log(specimen69.compareDna(mockUpStrand()));
+console.log(specimen69.willLikelySurvive());

@@ -1,0 +1,34 @@
+function subLength(string, character) {
+    let characterCount = 0
+    let len = -1;
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] == character) {
+        characterCount++;
+        if (characterCount > 2) {
+          return 0;
+        } 
+        if (len == -1) {
+          len = i;
+        } else {
+          len = i - len + 1;
+        }
+      }
+    } 
+    if (characterCount < 2) {
+      return 0;} 
+      return len;
+      };
+  
+      
+
+
+
+
+
+
+
+
+subLength('Saturday', 'a'); // returns 6
+subLength('summer', 'm'); // returns 2
+subLength('digitize', 'i'); // returns 0
+subLength('cheesecake', 'k'); // returns 0
