@@ -1,0 +1,96 @@
+// Returns a random DNA base
+const returnRandBase = () => {
+  const dnaBases = ["A", "T", "C", "G"];
+  return dnaBases[Math.floor(Math.random() * 4)];
+};
+
+// Returns a random single stand of DNA containing 15 bases
+const mockUpStrand = () => {
+  const newStrand = [];
+  for (let i = 0; i < 15; i++) {
+    newStrand.push(returnRandBase());
+  }
+  return newStrand;
+};
+
+const pAequorFactory = (num, bases) => {
+  return {
+    specimenNum: num,
+    dna: bases,
+    mutate() {
+      let i = Math.floor(Math.random() * this.dna.length);
+      let oldBase = this.dna[i];
+      let newBase = returnRandBase();
+      do {
+        newBase = returnRandBase();
+      } while (newBase === this.dna[i])
+        this.dna[i] = newBase;
+        return this.dna;  
+      },
+    compareDna(otherPAequor) {
+      const similarities = this.dna.reduce((acc, curr, idx, arr) => {
+        if (arr[idx] === otherPAequor.dna[idx]) {
+          return acc + 1;
+        } else {
+          return acc;
+        }
+      }, 0);
+      console.log(similarities);
+      const isSame = (similarities / this.dna.length) * 100;
+      const percentTo2Dec = isSame.toFixed(2);
+        return `Specimen #${this.specimenNum} and Specimen #${otherPAequor.specimenNum} have ${percentTo2Dec}% DNA in common.`
+    },
+    willLikelySurvive() {
+      const cAndG = this.dna.filter(letter => letter === 'C' || letter === 'G');
+        if (cAndG.length/this.dna.length >= 0.6) {
+          return this.specimenNum + ': ' + this.dna.join("|") + ' - high chance of survival.';
+        } else {
+          return this.specimenNum + ': ' + this.dna.join("|") + ' - normal chance of survival.'
+        }
+    }
+  }//return end
+};//pAequorFactory end
+
+
+   /* Haven't figured out how to make this one work yet. 
+   complimentStrand() {
+      let compStrand = pAequorFactory(this.specimenNum, []);
+      for (let key in this.dna) {
+        switch(this.dna[key]){
+          case 'C':
+          compStrand.dna.push('G');
+          break;
+          case 'G':
+          compStrand.dna.push('C');
+          break;
+          case 'A':
+          compStrand.dna.push('T');
+          break;
+          case 'T':
+          compStrand.dna.push('A');
+          break;
+        }
+      }
+      return `${this.specimenNum}: ${this.dna.join('|')} has the following complimentary strand = ${compStrand}`;
+    }, */ 
+    const survivingSpecimen = [];
+let idCounter = 1;
+
+while (survivingSpecimen.length < 30) {
+  let newOrg = pAequorFactory(idCounter, mockUpStrand());
+  if (newOrg.willLikelySurvive()) {
+    survivingSpecimen.push(newOrg);
+  }
+  idCounter++;
+}
+
+const specimen69 = pAequorFactory(69, mockUpStrand());
+const specimen100 = pAequorFactory(100, mockUpStrand())
+//console.log(specimen69.dna);
+//console.log(specimen69.mutate());
+//console.log(mockUpStrand());
+//console.log(specimen69);
+//console.log(specimen69.compareDna(specimen100));
+//console.log(specimen69.willLikelySurvive());
+//console.log(specimen69.complimentStrand());
+console.log(survivingSpecimen);
