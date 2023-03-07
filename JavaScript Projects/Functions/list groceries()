@@ -1,0 +1,15 @@
+const groceries = u => {
+  const m = u.map(x => x.item);
+  if (m.length < 2) return m[0];
+  const p = m.pop();
+  return `${m.join(', ')} and ${p}`;
+};
+
+groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] );
+// returns 'Carrots, Hummus, Pesto and Rigatoni'
+ 
+groceries( [{item: 'Bread'}, {item: 'Butter'}] );
+// returns 'Bread and Butter'
+ 
+groceries( [{item: 'Cheese Balls'}] );
+// returns 'Cheese Balls'

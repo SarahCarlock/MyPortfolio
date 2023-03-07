@@ -1,0 +1,17 @@
+// Write your code here:
+
+function convertToBaby(animals) {
+  let babyAnimals = [];
+  for (let i = 0; i < animals.length; i++) {
+    babyAnimals.push('baby ' + animals[i]);
+  }
+  return babyAnimals;
+
+}
+
+
+
+const animals = ['panda', 'turtle', 'giraffe', 'hippo', 'sloth', 'human'];
+
+console.log(convertToBaby(animals)) 
+

@@ -1,0 +1,16 @@
+// Write your code here:
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+
+function shoutGreetings(strArray){
+  let greet = strArray.map((greeting) => greeting.toUpperCase() + "!")
+  return greet;
+};
+
+
+
+
+
+
+console.log(shoutGreetings(greetings))
+// Should print [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
+
