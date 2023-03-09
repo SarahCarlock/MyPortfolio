@@ -1,0 +1,9 @@
+Build with JS 
+Create a joke generator that tells a joke followed by punchline if applicable
+    Random generation
+    Switch/Case to filter through jokes
+Button that says "Tell me another one!"
+    Takes user to next joke.
+    "I don't know" provides answer.
+Button that says "That's it for me."
+    Takes user to new page with picture of someone waving.
