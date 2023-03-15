@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+  
+  * {
+    background-color: rgb(182, 180, 180);
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    /* Home Section */
+    #home {
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: static;
+      padding-bottom: 10px;
+      align-items: center;
+    }
+
+    p.introduction {
+      font-style: italic;
+    }
+
+    <!-- Hamburger Menu-->
+    svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa :not(.socialbox){
+      background-color: darkslategray !important;
+      z-index: 999;
+    }
+
+    .fa-bars, .fa-xmark {
+      background-color: darkslategray !important;
+    }
+
+  /* About Section */
+  #about {
+    height: 100vh;
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: static;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+
+  <!--social-icons-->
+  #socialconnections {
+    top: 30%;
+  }
+  .socialbox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+  }
+
+  .social-link {
+    text-decoration: none;
+  }
+
+a.social-link {
+  color: blue;
+}
+  #linkedin {
+    font-size: 100px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  #linkedin:hover {
+  opacity: 0.7;
+  color:lightblue;
+  }
+  
+  /* Project Section */
+  #portfolio {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .projects {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  .project-tile {
+    height: auto;
+    width: auto;
+    border-radius: 25%;
+
+  }
+
+  .projectlink:link {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: darkslateblue;
+    text-align: center;
+    font-size: 50px;
+    height: 20rem;
+    width: 20rem;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 25%;
+  }
+
+  .projectlink:visited {
+    text-decoration: none;
+    color: darkslateblue;
+  }
+
+
+  .projectlink:active {
+    text-decoration: none;
+  }
+
+  div.project-section {
+    justify-content: space-evenly;
+  }
+
+  /*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+  #portfolio {
+    height: auto;
+  }
+  .projects {
+    height: auto;
+    width: auto;
+    flex-flow: row wrap;
+  }
+}
+
+/*Tablet vertical*/
+@media only screen and (max-width: 997px) {
+  #portfolio {
+    height: auto;
+  }
+  .projects {
+    height: auto;
+    width: auto;
+    flex-flow: row wrap;
+  }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+}
+
+  /* Certificcation Section */
+  #certifications {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .proof {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+/* Spinner */
+.attempt {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.spinner-border {
+  height: 15rem !important;
+  width: 15rem !important;
+  animation: 2s linear infinite spinner-border !important;
+  border: 2rem dotted !important;
+  border-radius: 50% !important;
+}
+span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 35%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+  footer {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: lucida handwriting;
+    font-style: italic;
+    font-size: 2rem;
+  }
