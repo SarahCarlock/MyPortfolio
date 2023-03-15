@@ -9,13 +9,16 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-  
-  * {
+
+  body {
+    height: 100vh;
     background-color: rgb(182, 180, 180);
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-
+  
   a {
     text-decoration: none;
     display: flex;
@@ -25,14 +28,11 @@ html {
 
     /* Home Section */
     #home {
-      height: 100vh;
+      height: auto;
+      width: 100%;
       text-align: center;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      position: static;
-      padding-bottom: 10px;
-      align-items: center;
+      display: inline-block;
+      padding-top: 4rem;
     }
 
     p.introduction {
@@ -51,14 +51,12 @@ html {
 
   /* Contact Section */
   #contact {
-    height: 100vh;
+    height: auto;
     text-align: center;
-    display: block;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    
+
     position: static;
     padding-bottom: 10px;
-    align-items: center;
   }
 
   <!--social-icons-->
