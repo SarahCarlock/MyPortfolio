@@ -49,8 +49,8 @@ html {
       background-color: darkslategray !important;
     }
 
-  /* About Section */
-  #about {
+  /* Contact Section */
+  #contact {
     height: 100vh;
     text-align: center;
     display: block;
@@ -178,7 +178,7 @@ a.social-link {
 @media only screen and (max-width: 460px) {
 }
 
-  /* Certificcation Section */
+  /* Certification Section */
   #certifications {
     height: 100vh;
     display: flex;
