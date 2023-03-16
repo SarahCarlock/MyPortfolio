@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  background-color: rgb(255, 255, 180);
 }
 
 html {
@@ -12,11 +13,14 @@ html {
 
   body {
     height: 100vh;
-    background-color: rgb(182, 180, 180);
     margin: 0;
     padding: 0;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  main {
+    height: 80%;
   }
   
   a {
@@ -224,8 +228,9 @@ span {
   footer {
     display: block;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    height: 20%;
+    padding-bottom: 20px;
+    padding-top: 20px;
     font-family: lucida handwriting;
     font-style: italic;
     font-size: 2rem;
