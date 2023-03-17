@@ -9,3 +9,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("contact").style.marginLeft = "0";
   }
+
+  $(".button").click(function(){
+    $("a").toggleClass("menu");
+  });
