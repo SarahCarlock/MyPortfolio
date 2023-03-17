@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 180);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* sidebar container*/
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 10%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: darkslategray;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+
+ul {
+    display: block;
+    width: auto;
+    list-style-type: none !important;
+    background-color: darkslategrey;
+    
+}
+
+/* The sidebar links */
+.sidebar a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: lightcyan;
+    background-color: darkslategray;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    font-size: 4rem;
+    margin-left: 2rem;
+    text-decoration: none !important;
+  }
+  
+  /* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: none;
+  }
+  
+.openbtn:hover {
+    color: #444;
+    opacity: 0.5;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* Contact Section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column wrap;
+    padding: 1rem;
+  }
+
+h1.introduction {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+p.introduction {
+    font-style: italic;
+    font-size: 5rem;
+    margin: 1rem;
+    padding: 2rem;
+    
+}
+
+div.socialbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: ;
+  }
+
+a.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 6rem;
+    width: 6rem;
+  }
+
+a.social-link img {
+    z-index: 100;
+    width: 100%;
+    height: auto;
+}
+
+a.social-link img:hover {
+    height: auto;
+    width: 5rem;
+    opacity: 0.7;
+}
+
+div.icon-box {
+    padding: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    height: auto;
+    font-family: lucida handwriting;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
