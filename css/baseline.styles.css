@@ -28,8 +28,6 @@ nav {
 }
 nav a {
     color: black;
-    font-family: lucida handwriting;
-    font-style: italic;
     font-size: 1.5rem;
     padding:0 15px;
     text-decoration:none;
@@ -73,18 +71,19 @@ header {
     padding: 3rem;
   }
 h1.introduction {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 1rem;
     padding: 2rem;
     text-align: center;
+    text-decoration: underline;
 }
 p.introduction {
     font-style: italic;
     font-size: 5rem;
     margin: 1rem;
     padding: 2rem;
-    
+    font-family: lucida handwriting;
 }
 div.socialbox {
     display: flex;
