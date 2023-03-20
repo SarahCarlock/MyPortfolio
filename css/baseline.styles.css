@@ -68,15 +68,11 @@ button {
     transition:all 200ms ease-in;
     z-index:500;
 }
-button:focus, button:active, button:hover {
-    ;
-}
 img#menu {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
 }
-
 /* Contact Section */
 header {
     display: flex;
