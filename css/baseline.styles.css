@@ -15,6 +15,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /*NAV*/
+div#menu-navbox {
+    width: 100%;
+    height: auto;
+}
 .fade {
     padding-top: 1px;
     display: none;
@@ -34,21 +38,26 @@ nav {
     -webkit-transition:all 200ms ease-in;
     -o-transition:all 200ms ease-in;
     transition:all 200ms ease-in;
+    padding: 1rem;
 }
 nav a {
     color: black;
-    background-color: rgb(193, 254, 139);
+    background-color: rgba(104, 160, 213, 0.25);
     font-size: 1.5rem;
-    padding:0 15px;
+    padding:10px;
     text-decoration:none;
     display:inline;
     font-weight:bolder;
     letter-spacing:2px;
     float: left;
 }
+nav a:hover, nav a:active {
+    background-color: rgba(104, 160, 213, 0.5);
+}
 button {
     display:block;
     background:transparent;
+    border: 0;
     text-align:center;
     position:fixed;
     top:10px;
@@ -60,7 +69,7 @@ button {
     z-index:500;
 }
 button:focus, button:active, button:hover {
-    background-color: rgb(193, 254, 139);
+    ;
 }
 img#menu {
     height: 4rem;
