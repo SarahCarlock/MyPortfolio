@@ -15,13 +15,16 @@
 <body id="contact-page">
 
     <!-- Navigation-->
-    <input type="checkbox" id="navigation" class="button" />
-			<label for="navigation"><img src="Web icons\icons8-hamburger-menu-96.png" alt="navigational menu" id="menu"></label>
-			<nav class="fade">
+    
+    <button type="button" id="navigation" class="button" onclick="menuFunction()">
+			<img src="Web icons\icons8-hamburger-menu-96.png" alt="navigational menu" id="menu"></button>
+			<div id="nav" class="fade">
+        <nav class="navholder">
                 <a href="index.html" class="menu">Home</a>
                 <a href="#portfolio" class="menu">DEADPortfolio</a>
                 <a href="#" class="menu">Contact</a>
-      </nav>
+        </nav>
+      </div>
 
 <main id="contact">
     <header>
@@ -52,6 +55,6 @@
 <footer>
     <p class="origin">Initiated <i class="fa fa-heart" aria-hidden="true"></i> 2022</p>
 </footer>
-<script src="js\contactinformation.js"></script>
-</body>
+<script src="js/contactinformationscript.js"></script>
+</body> 
 </html>

@@ -10,16 +10,25 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /*NAV*/
+.fade {
+    padding-top: 1px;
+    display: none;
+}
+.fade2 {
+    display: inline;
+}
+div#nav {
+   margin: 0;
+}
 nav {
-    display: block;
     position: absolute;
     top: 2rem;
-    left: 4rem;
+    left: 6rem;
 	transition: all 60s ease;
     -moz-transition:all 200ms ease-in;
     -webkit-transition:all 200ms ease-in;
@@ -28,6 +37,7 @@ nav {
 }
 nav a {
     color: black;
+    background-color: rgb(193, 254, 139);
     font-size: 1.5rem;
     padding:0 15px;
     text-decoration:none;
@@ -36,7 +46,7 @@ nav a {
     letter-spacing:2px;
     float: left;
 }
-label {
+button {
     display:block;
     background:transparent;
     text-align:center;
@@ -49,16 +59,13 @@ label {
     transition:all 200ms ease-in;
     z-index:500;
 }
+button:focus, button:active, button:hover {
+    background-color: rgb(193, 254, 139);
+}
 img#menu {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-}
-input[type="checkbox"]{
-    display:none;
-}
-input[type="checkbox"]:checked ~ nav{
-    margin:0;
 }
 
 /* Contact Section */
@@ -69,6 +76,7 @@ header {
     text-align: center;
     flex-flow: column wrap;
     padding: 3rem;
+    margin-top: 3rem;
   }
 h1.introduction {
     font-size: 2rem;
