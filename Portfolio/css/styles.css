@@ -169,50 +169,6 @@ a.social-link {
 @media only screen and (max-width: 460px) {
 }
 
-  /* Certification Section */
-  #certifications {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .proof {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-/* Spinner */
-.attempt {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  margin-left: -50px;
-  margin-top: -50px;
-}
-.spinner-border {
-  height: 15rem !important;
-  width: 15rem !important;
-  animation: 2s linear infinite spinner-border !important;
-  border: 2rem dotted !important;
-  border-radius: 50% !important;
-}
-span {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 35%;
-  font-style: italic;
-  font-weight: bold;
-}
 
   footer {
     display: block;
