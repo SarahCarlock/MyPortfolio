@@ -51,8 +51,12 @@ nav a {
     letter-spacing:2px;
     float: left;
 }
-nav a:hover, nav a:active {
+nav a:hover {
     background-color: rgba(104, 160, 213, 0.5);
+}
+a.active {
+    background-color: rgba(104, 160, 213, 0.5);
+
 }
 button {
     display:block;
@@ -75,7 +79,7 @@ img#menu {
 }
 /* Contact Section */
 header {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
