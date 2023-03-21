@@ -33,17 +33,19 @@
 </head>
 
 <body id="page-top">
-      <!-- Navigation-->
-      <a class="menu-toggle rounded" href="#" data-activates="slide-out"> <img src="Web icons\icons8-hamburger-menu-48.png"></a>
-      <nav id="sidebar-wrapper">
-          <ul class="sidebar-nav" role="navigation">
-              <li class="sidebar-brand"><a href="#page-top">Sarah Carlock</a></li>
-              <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-              <li class="sidebar-nav-item"><a href="portfolio-contactpage.html">Contact Info</a></li>
-              <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-              <li class="sidebar-nav-item"><a href="portfolio-certifications.html">Certifications</a></li>
-          </ul>
-      </nav>
+    <!-- Navigation-->
+    <div id="menu-navbox">
+      <button type="button" id="navigation" class="button" onclick="menuFunction()">
+        <img src="Web icons\icons8-hamburger-menu-96.png" alt="navigational menu" id="menu"></button>
+        <div id="nav" class="fade">
+          <nav class="navholder">
+                  <a href="#" class="menu active">Home</a>
+                  <a href="#portfolio" class="menu">DEADPortfolio</a>
+                  <a href="portfolio-certifications.html" class="menu">Qualifications</a>
+                  <a href="portfolio-contactpage.html" class="menu">Contact</a>
+          </nav>
+        </div>
+      </div>
     <header id="home">
       <h1 id="intro" class="introduction">hello world</h1>
       <p class="introduction">Sarah Carlock</p>
