@@ -1,0 +1,20 @@
+JavaScript Help
+
+Profile lookup
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+
+for (let i = o; i <contacts.length; i++) {
+  if (contacts[i].firstName === name) {
+    return contacts[i][prop] || "No such Property";
+  } else if (contacts[i].firstName === name && contacts[i.hasOwnProperty(prop) === false]) {
+    return "No such Property";
+  }
+}
+return "No such contact";
+
+  // Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");
