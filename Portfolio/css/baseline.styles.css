@@ -98,7 +98,6 @@ div p.introduction {
 }
 div.label {
     justify-content: center;
-
 }
 div h1.introduction {
     display: inline-flex;
@@ -158,9 +157,6 @@ div.grid-container {
     justify-content: space-evenly;
     margin-top: 5rem;
 }
-div.grid-item {
-
-}
 div.skill-item {
     display: inline-flex;
     flex-direction: row wrap;
@@ -208,6 +204,19 @@ span {
   font-style: italic;
   font-weight: bold;
 } */
+
+/* Project Section */
+div.project-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+div.grid-item {
+    height: 5rem;
+    width: 5rem;
+}
 footer {
     position: absolute;
     bottom: 0;
