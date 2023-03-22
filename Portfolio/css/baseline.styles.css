@@ -82,8 +82,6 @@ img#menu {
 header {
     text-align: center;
     padding: 3rem;
-    margin-top: 3rem;
-    top: 3rem;
   }
 div {
     display: flex;
@@ -151,8 +149,21 @@ div.qualifications-container {
     height: 50%;
     float: right;
 }
+.skills-container li {
+    line-height: 2rem;
+}
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+div.grid-item {
+
+}
 div.skill-item {
     display: inline-flex;
+    flex-direction: row wrap;
     height: auto;
     justify-content: center;
     align-items: center;
