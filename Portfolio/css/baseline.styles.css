@@ -210,7 +210,7 @@ span {
 } */
 footer {
     position: absolute;
-    bottom: 2rem;
+    bottom: 0;
     width: 100%;
     height: auto;
     font-family: lucida handwriting;
