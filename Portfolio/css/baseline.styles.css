@@ -43,7 +43,6 @@ nav {
 }
 nav a {
     color: black;
-    background-color: rgba(104, 160, 213, 0.25);
     font-size: 1.5rem;
     padding:10px;
     text-decoration:none;
@@ -54,10 +53,11 @@ nav a {
 }
 nav a:hover {
     background-color: rgba(104, 160, 213, 0.5);
+    border-radius: 50%;
 }
 a.active {
     background-color: rgba(104, 160, 213, 0.5);
-
+    border-radius: 50%;
 }
 button {
     display:block;
