@@ -32,7 +32,7 @@ div#nav {
 }
 nav {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     left: 6rem;
 	transition: all 60s ease;
     -moz-transition:all 200ms ease-in;
@@ -93,7 +93,7 @@ div p.introduction {
     top: 0;
     font-size: 2.5rem;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     font-family: lucida handwriting;
 }
 div.label {
@@ -149,7 +149,7 @@ div.qualifications-container {
     float: right;
 }
 .skills-container li {
-    line-height: 2rem;
+    line-height: 1rem;
 }
 div.grid-container {
     display: grid;
@@ -208,14 +208,40 @@ span {
 /* Project Section */
 div.project-container {
     display: grid;
-    grid-template-columns: auto auto auto;
     justify-content: space-evenly;
+    grid-template-rows: auto auto auto;
     margin-top: 5rem;
-    gap: 2rem;
+    gap: 1rem;
+    height: auto;
+}
+div.row {
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+.row,
+.row > .column {
+    margin: .5rem;
+}
+div.column {
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
 }
 div.grid-item {
-    height: 5rem;
-    width: 5rem;
+    height: auto;
+    width: auto;
+    border-style: groove;
+    border-color: rgb(172, 172, 172);
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+}
+a.project-link  {
+    text-decoration: none;
+}
+.img-fluid {
+    height: 100%;
 }
 footer {
     position: absolute;
