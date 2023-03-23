@@ -14,6 +14,30 @@ body {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+header {
+    text-align: center;
+    padding: 3rem;
+  }
+div {
+    display: flex;
+    height: 5rem;
+}
+div.row {
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+.row,
+.row > .column {
+    margin: .5rem;
+}
+div.column {
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+}
 /*NAV*/
 div#menu-navbox {
     width: 100%;
@@ -82,14 +106,6 @@ img#menu {
     border-radius: 50%;
 }
 /* Contact Section */
-header {
-    text-align: center;
-    padding: 3rem;
-  }
-div {
-    display: flex;
-    height: 5rem;
-}
 div p.introduction {
     position: absolute;
     right: 0;
@@ -139,50 +155,14 @@ div.icon-box {
     padding: 3rem;
 }
   /* Skills Section */
-div.row {
-    margin: .5rem 1rem;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    height: auto;
-}
-.row,
-.row > .column {
-    margin: .5rem;
-}
-div.column {
-    width: 10rem;
-    height: 10rem;
-    justify-content: center;
-}
-div.project-item {
-    height: auto;
-    width: auto;
-    border-style: groove;
-    border-color: rgb(172, 172, 172);
-    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
-}
 div.skills-container {
     display: inline-block;
     width: 50%;
     height: 50%;
     float: left;
   }
-div.qualifications-container {
-    display: inline-block;
-    width: 50%;
-    height: 50%;
-    float: right;
-}
 .skills-container li {
     line-height: 1rem;
-}
-div.webicon-container {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    margin-top: 5rem;
 }
 div.skill-item {
     display: inline-flex;
@@ -191,10 +171,23 @@ div.skill-item {
     justify-content: center;
     align-items: center;
 }
+div.qualifications-container {
+    display: inline-block;
+    width: 40%;
+    height: 50%;
+    float: right;
+}
+div.webicon-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
 div.qual-item {
     display: inline-flex;
     flex-direction: row wrap;
-    height: auto;
+    height: 10rem;
     justify-content: center;
     align-items: center;
 }
@@ -214,31 +207,6 @@ img.proof-vertical {
     justify-content: center;
     align-items: center;
   }
-/* Spinner 
-.attempt {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  margin-left: -50px;
-  margin-top: -50px;
-}
-.spinner-border {
-  height: 15rem !important;
-  width: 15rem !important;
-  animation: 2s linear infinite spinner-border !important;
-  border: 2rem dotted !important;
-  border-radius: 50% !important;
-}
-span {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 35%;
-  font-style: italic;
-  font-weight: bold;
-} */
-
 /* Project Section */
 div.project-container {
     display: grid;
@@ -247,22 +215,6 @@ div.project-container {
     margin-top: 5rem;
     gap: 1rem;
     height: auto;
-}
-div.row {
-    margin: .5rem 1rem;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    height: auto;
-}
-.row,
-.row > .column {
-    margin: .5rem;
-}
-div.column {
-    width: 10rem;
-    height: 10rem;
-    justify-content: center;
 }
 div.project-item {
     height: auto;
@@ -277,6 +229,7 @@ a.project-link  {
 .img-fluid {
     height: 100%;
 }
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;

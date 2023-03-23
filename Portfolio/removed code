@@ -100,3 +100,28 @@ ul {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+  /* Spinner 
+.attempt {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.spinner-border {
+  height: 15rem !important;
+  width: 15rem !important;
+  animation: 2s linear infinite spinner-border !important;
+  border: 2rem dotted !important;
+  border-radius: 50% !important;
+}
+span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 35%;
+  font-style: italic;
+  font-weight: bold;
+} */
