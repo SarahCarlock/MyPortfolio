@@ -139,6 +139,29 @@ div.icon-box {
     padding: 3rem;
 }
   /* Skills Section */
+div.row {
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+.row,
+.row > .column {
+    margin: .5rem;
+}
+div.column {
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+}
+div.project-item {
+    height: auto;
+    width: auto;
+    border-style: groove;
+    border-color: rgb(172, 172, 172);
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+}
 div.skills-container {
     display: inline-block;
     width: 50%;
@@ -154,13 +177,21 @@ div.qualifications-container {
 .skills-container li {
     line-height: 1rem;
 }
-div.grid-container {
+div.webicon-container {
     display: grid;
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     margin-top: 5rem;
 }
 div.skill-item {
+    display: inline-flex;
+    flex-direction: row wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+div.qual-item {
     display: inline-flex;
     flex-direction: row wrap;
     height: auto;
@@ -233,7 +264,7 @@ div.column {
     height: 10rem;
     justify-content: center;
 }
-div.grid-item {
+div.project-item {
     height: auto;
     width: auto;
     border-style: groove;
