@@ -109,6 +109,19 @@ img#menu {
     width: 4rem;
     border-radius: 50%;
 }
+/*Quote Section in Home page */
+div.quote-container {
+    display: block;
+    text-align: center;
+}
+p.quote {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+p#line1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
 /* Contact Section */
 div p.introduction {
     position: absolute;
