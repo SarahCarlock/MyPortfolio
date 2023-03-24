@@ -22,10 +22,6 @@ div {
     display: flex;
     height: 5rem;
 }
-div.grid-content {
-    display: grid;
-    grid-template-columns: auto auto;
-}
 div.row {
     margin: .5rem 1rem;
     align-items: center;
@@ -172,26 +168,25 @@ div.icon-box {
     padding: 3rem;
 }
   /* Skills Section */
+  div.grid-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    margin: 2rem;
+  }
 div.skills-container {
     display: inline-block;
-    width: 40%;
     height: 50%;
     float: left;
   }
 .skills-container li {
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 div.skill-item {
     display: inline-flex;
     height: 4rem;
     justify-content: center;
     align-items: center;
-}
-div.qualifications-container {
-    display: inline-block;
-    width: 40%;
-    height: 50%;
-    float: right;
 }
 div.webicon-container {
     display: grid;
@@ -200,29 +195,38 @@ div.webicon-container {
     justify-content: space-evenly;
     margin-top: 5rem;
 }
+div.qualifications-container {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+}
+div.qual {
+    height: 12rem;
+    justify-content: flex-start;
+    align-items: center;
+}
 div.qual-item {
     display: inline-flex;
     flex-direction: row wrap;
-    height: 10rem;
-    justify-content: center;
+    height: 12rem;
     align-items: center;
 }
-img.proof-horizontal {
+div.qual-item p {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+img.proof {
     display: flex;
     height: 10rem;
-    width: auto;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-img.proof-vertical {
-    display: flex;
-    height: auto;
     width: 10rem;
-    padding: 20px;
     justify-content: center;
     align-items: center;
+    border-style: inset;
+    border-color: gray;
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
   }
+
 /* Project Section */
 div.project-container {
     display: grid;
