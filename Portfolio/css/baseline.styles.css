@@ -192,7 +192,6 @@ div.webicon-container {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
     margin-top: 5rem;
 }
 div.qualifications-container {
