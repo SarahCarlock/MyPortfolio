@@ -105,7 +105,44 @@ img#menu {
     width: 4rem;
     border-radius: 50%;
 }
+/*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+}
+
+/*Tablet vertical*/
+@media only screen and (max-width: 949px) {
+    nav a {
+        font-size: 1.25rem;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.quote-container {
+        position: relative;
+        top: 5rem;
+    }
+    div.grid-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 682px) {
+    nav {
+        left: 0;
+        top: 4.5rem;
+    }
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+}
 /*Quote Section in Home page */
+section.content-section {
+    height: auto;
+}
 div.quote-container {
     display: block;
     text-align: center;
@@ -129,8 +166,7 @@ div p.introduction {
     right: 0;
     top: 0;
     font-size: 2.5rem;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 2rem;
     font-family: lucida handwriting;
 }
 div.label {
@@ -173,7 +209,7 @@ div.icon-box {
     padding: 3rem;
 }
   /* Skills Section */
-  div.grid-content {
+div.grid-content {
     display: grid;
     grid-template-columns: auto auto;
     gap: 2rem;
@@ -182,7 +218,6 @@ div.icon-box {
 div.skills-container {
     display: inline-block;
     height: 50%;
-    float: left;
   }
 .skills-container li {
     line-height: 1.5rem;
@@ -255,7 +290,7 @@ a.project-link  {
 }
 /* Footer */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: auto;
