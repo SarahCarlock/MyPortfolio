@@ -19,8 +19,8 @@ header {
     padding: 3rem;
   }
 div.row {
-    display: inline-flex;
-    flex-direction: row wrap;
+    display: flex;
+    flex-flow: row wrap;
     margin: .5rem 1rem;
     align-items: center;
     justify-content: center;
