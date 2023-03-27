@@ -203,14 +203,17 @@ div.icon-box {
   /* Skills Section */
 div.lotsa-content {
     display: flex;
-    flex-flow: row wrap;
-    margin: 2rem;
+    justify-content: center;
+    margin: 5rem 0;
+    height: auto;
   }
 div.left, div.right {
-    flex: 50%;
-    padding: 1rem;
     display: flex;
     flex-flow: column wrap;
+   
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 div.skills-container {
     height: auto;
@@ -259,6 +262,16 @@ img.proof {
     border-color: gray;
     box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
   }
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.lotsa-content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-top: 5rem;
+        height: auto;
+      }
+}
 /*Mid-Point break for grid*/
 @media only screen and (max-width: 600px) {
     div.qual-item {
