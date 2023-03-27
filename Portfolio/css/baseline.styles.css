@@ -32,7 +32,6 @@ div.row {
     justify-content: center;
     height: auto;
 }
-.row,
 .row > .column {
     margin: .5rem;
 }
@@ -188,8 +187,9 @@ div h1.introduction {
 }
 div.socialbox {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    margin: 5rem 0;
+    height: auto;
   }
 a.social-link {
     display: inline-flex;
@@ -276,13 +276,6 @@ img.proof {
   }
 /*Smartphone*/
 @media only screen and (max-width: 767px) {
-    div.lotsa-content {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        margin-top: 5rem;
-        height: auto;
-      }
 }
 /*Mid-Point break for grid*/
 @media only screen and (max-width: 600px) {
