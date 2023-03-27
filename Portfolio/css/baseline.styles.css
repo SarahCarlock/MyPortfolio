@@ -19,10 +19,11 @@ header {
     padding: 3rem;
   }
 div.row {
+    display: inline-flex;
+    flex-direction: row wrap;
     margin: .5rem 1rem;
     align-items: center;
     justify-content: center;
-    grid-template-columns: auto auto auto;
     height: auto;
 }
 .row,
@@ -266,26 +267,46 @@ img.proof {
 }
 /* Project Section */
 div.project-container {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    justify-content: center;
     margin-top: 5rem;
-    gap: 1rem;
     height: auto;
 }
-div.project-item {
+div.project-row {
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    width: auto;
+    width: 75%;
+}
+.project-row > .project-column {
+    margin: 2rem;
+}
+div.project-column, div.project-item {
+    height: 10rem;
+    width: 10rem;
+}
+div.project-item {
+    display: flex;
+    justify-content: center;
     border-style: groove;
     border-color: rgb(172, 172, 172);
     box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
 }
-a.project-link  {
-    text-decoration: none;
-}
 .img-fluid {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
+a.projectlink  {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
 /* Footer */
 footer {
     position: fixed;
