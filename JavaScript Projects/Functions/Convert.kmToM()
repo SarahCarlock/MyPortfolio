@@ -1,0 +1,7 @@
+const Convert = {
+  kmToM(inputValue){
+    return Math.round(inputValue / 1.609 * 100)/100;
+  }
+}
+
+module.exports = Convert;  

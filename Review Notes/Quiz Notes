@@ -1,0 +1,146 @@
+let tasks = 2;
+
+tasks += 8;
+console.log(tasks);
+
+const gecko = () => { 
+    return 'I\'m actually a chameleon!' 
+  };
+   
+  const chameleon = gecko;
+   
+  console.log(chameleon().toUpperCase());
+
+/* Batman's new sidekick! */
+  const batman = {
+    _sidekick: 'Robin',
+    get sidekick(){
+      return this._sidekick
+    },
+    set sidekick(newSidekick){
+      if (newSidekick !== 'Joker'){
+        this._sidekick = newSidekick;  
+      } else {
+        console.log('ERROR: Joker is not a suitable sidekick'); 
+      }
+    }
+  }
+   
+  batman.sidekick = 'Batgirl';
+/* Create a Circle */
+Create an object circle with a property _radius set to 5. Then, create a getter and setter method for this property.
+
+const circle = {
+  _radius: 5,
+  get radius() {
+    return this._radius;
+  },
+  set radius(newRadius) {
+    this._radius = newRadius;
+  }
+}
+/* Switch statement - Complete the switch statement. */
+
+const favoriteFood = 'potato';
+switch(favoriteFood) {
+  case 'sushi':
+    console.log('I love sushi!');
+    break;
+  default:
+    console.log('That is not my favorite food.');
+}
+ 
+// Output: 'That is not my favorite food.'
+/* index and title starting at 1 */
+titles = ['The Philosopher\'s Stone', 'The Chamber of Secrets', 'The Prisoner of Azkaban', 'The Goblet of Fire', 'The Order of the Phoenix', 'The Half-Blood Prince', 'The Deathly Hallows'];
+for (let i = 1; i < titles.length; i++) {
+titles.forEach((title, index) => {
+  console.log(`${index+=1}. ${title}`)
+  });
+};
+/* Order scoops of icecream! */
+function order(number, flavor) {
+  if (number === 1) {
+    return `Lemme get ${number} scoop of ${flavor}!`
+  } else if (number >= 2) {
+    return `Lemme get ${number} scoops of ${flavor}!`
+  }
+  };
+  
+  order(1, 'vanilla');
+
+/*  Complete the blanks to create a JavaScript array primes containing prime numbers only. */
+
+const numbers = [16, 6, 26, 5];
+const primes = numbers.map(p => {
+  return  p - 3;
+});
+
+/* Reverse array and items in array 
+Fill in the code below to reverse the list of colors, reverse each word in the list, and then print out each word, starting with 'teloiv'.*/
+
+const rainbow = [
+  'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'
+];
+ 
+for (let ri = rainbow.length - 1; ri >= 0; ri -= 1) {
+  let color = rainbow[ri];
+  let result = '';
+  for (let ci = color.length - 1; ci >= 0; ci -= 1) {
+    result += color[ci];
+  }
+  console.log(result);
+}
+
+/* Print the time */
+time = 22;
+if(time <= 6) {
+  console.log('Dawn');
+} else if (time <= 15) {
+  console.log('Afternoon');
+} else {
+  console.log('Night');
+}
+
+/* Output? */
+const arrayOfNums = [7, 9, 24, 18, 10];
+const sumPlus = arrayOfNums.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue + 1;
+},5);
+ 
+console.log(sumPlus);
+
+<input type="url" name="website" pattern="http://.%20" title="must include http://"></input>
+
+/*Arrange the elements to set up an .addEventListener() method: */
+eventTarget.addEventListener("event", eventHandlerFunction);
+document.getElementsByClassName('image').ondblclick = showPreview;
+document.getElementById('meme-top').onkeyup = updateMemeTop;
+$('#button').on('click', () => {
+  console.log('The button has been clicked!');
+});
+/* Fill in the blanks such that the event will fire when a user presses a key. */
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+});
+/*set an event listener: <event-target>.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);
+remove an event: .removeEventListener()
+Ternary Operator: When there is a binary decision with a single if/else statement.
+In JavaScript, a callback function is invoked during the execution of the higher order function that it is passed to: true
+
+In JavaScript, whether using traditional event handlers or DOM events, event handlers are not attached to their relevant object as a reference to the function. Therefore, in standard compliant browsers, when the event fires, the function is executed but NOT as a method of the object.: false
+Which attribute of the <script> element allows scripts to be loaded asynchronously? async?
+
+Error Stack Trace: a printed message containing information about where the error occurred, what type of error was thrown, and a description of the error.
+
+Select the option that contains the significance of the JavaScript delete keyword: The delete keyword can be used to remove a property from an object.
+
+
+Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value. Variable names tjat would serve as properties of this new object must already exist within that context.
+% In JavaScript, the percentage symbol denotes the modulus or remainder operator.
+the defer attribute of a <script> element indiecates that the script should not be executed until the HTML document is fully parsed.
+the Type attribute determines how an <input> element gets rendered to a page.
+DOM is an interfacce between scrpting languages and a web page's structure.
+Pull requests allow you and your teammates to review and discuss code AFTER you merge from one branch to another: FALSE
+

@@ -1,0 +1,16 @@
+const freeShippingMessage = "Congrats! You are eligible for free shipping on this order.";
+
+const freeShippingPromo = "Get free shipping on all orders of $75 dollars or more.";
+
+let subTotal;
+
+function checkCartTotal(subTotal) {
+  if (subTotal >= 75) {
+    return freeShippingMessage;
+  } else {
+    return freeShippingPromo;
+  }
+  return
+}
+
+console.log(checkCartTotal(80));

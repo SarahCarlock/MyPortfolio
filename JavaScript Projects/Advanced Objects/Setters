@@ -20,3 +20,34 @@ const robot = {
 robot.numOfSensors = 100;
 
 console.log(robot.numOfSensors);
+
+class Artwork {
+  constructor(title, artist){
+    this._title = title;
+    this._artist = artist;
+    this._price = 1000;
+  }
+
+  get title(){
+    return this._title;
+  }
+
+  get artist(){
+    return this._artist;
+  }
+
+  set price(price){
+    this._price = price;
+  }
+
+  get price(){
+    return this._price;
+  }
+
+}
+
+const starryNight = new Artwork('The Starry Night', 'Vincent van Gogh');
+// Set the price for starryNight
+starryNight.price = 1300;
+
+console.log(`${starryNight.title} by ${starryNight.artist} is on sale for $${starryNight.price}!`);

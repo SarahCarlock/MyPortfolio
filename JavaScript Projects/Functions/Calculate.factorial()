@@ -1,0 +1,15 @@
+const assert = require("assert");
+const Calculate =  require('./index.js')
+
+describe('Calculate', () => {
+  describe('.factorial',() => {
+    it('returns the factorial of a number', () => {
+      const expectedResult = 120;
+      const inputNumber = 5;
+      const result = Calculate.factorial(inputNumber);
+      assert.strictEqual(result, expectedResult);
+      // Create an assertion for strict equality between result and expectedResult
+      
+    });  
+  });
+});

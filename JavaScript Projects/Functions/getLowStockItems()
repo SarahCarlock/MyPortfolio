@@ -1,0 +1,26 @@
+Given the inventory array of objects, complete the code below to iterate over the array and return all objects that have less than 50 items in stock.
+
+const inventory = [
+  {
+    item: "scented candle",
+    stock: 48
+  },
+  {
+    item: "oil diffuser",
+    stock: 80
+  },
+  {
+    title: "tea kettle",
+    stock: 16
+  },
+  ...
+]
+function getLowStockItems() {
+  const lowStock = [];
+  for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].stock < 50) {
+      lowStock.push(inventory[i]);
+    }
+  }
+    return lowStock;
+}

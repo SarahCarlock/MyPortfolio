@@ -1,0 +1,17 @@
+What are the major steps in the Github flow?
+
+1. Work on a specific branch
+2. Commit changes and push code to remote repository
+3. Create pull request
+4. Discuss pull request with reviewers
+5. Merge branch once pull request accepted
+ 
+ Git
+Git log --oneline:Which of the following commands output the commit history in a git repository formatted on single lines? 
+Git’s amend command lets you combine staged changes with the previous commit instead of creating an entirely new commit.
+Git show HEAD: provide more info on the HEAD commit in Git.
+Remove Git branch: git branch -d  local_branch_name
+Git add filename.js: put file on staging area
+Git init: Complete the command to create a new Git repository in the file system.
+Git checkout HEAD file.js: When working in the terminal, fill in a git command that will remove all changes to text.js back to the last commit.
+git push origin main: As an example, you usually run git push origin main to push your local changes to your online repository.
