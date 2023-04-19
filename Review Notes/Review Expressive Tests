@@ -1,0 +1,16 @@
+Review
+You can now write tests with Node’s assert library! In this lesson you learned to:
+
+Check for loose (==) equality with assert.equal()
+Check for strict (===) equality with assert.strictEqual()
+Check the equality of two object’s values with assert.deepEqual()
+Make your tests expressive by using different assert methods found in the Node.js documentation.
+As you continue to write tests, remember to always evaluate them against the characteristics of a good test: fast, complete, reliable, isolated, maintainable, and expressive. If you are meeting these six criteria, you are creating high quality test frameworks!
+
+Four phases of a test: setup, exercise, verify, teardown.
+NOT a correct sentence: Cose should be tested in other programming languages.
+Mocha is used for organizing and automating tests that provide useful feedback when errors occur.
+What is the outcome of the following code: assert.ok(false);  = An error is thrown.
+Mocha it() function: takes two arguments. The it() function takes two arguments. First, a string that will be printed in the test suite, then a callback function that executes the code to be tested
+Which of the following is true about tests? Tests should run in isolation. One test should not affect another and they should all be able to run in any order.
+Definition of the Exerccise Phase of a test: Execute the functionality you are testing.
