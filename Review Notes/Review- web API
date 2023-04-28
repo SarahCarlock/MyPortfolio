@@ -1,0 +1,10 @@
+Review
+Congrats, we’ve now gone through the basics of web APIs! Here’s a quick recap of what we covered:
+
+With web APIs, we have a tool that we can use to access the functionality and data of another application.
+There are two main types of APIs: browser and third-party.
+Browser APIs require specific syntax and permissions.
+Third-party APIs have their own rules and requirements set by the organizations that maintain them.
+When making a request to API, we might have to supply more details about what information we want.
+If we get a successful response, we still have to decide how to consume the response data.
+That’s a lot to take in, but knowing that these tools exist opens up more possibilities for what we can do with our apps!

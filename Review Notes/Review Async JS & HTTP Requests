@@ -1,0 +1,32 @@
+
+Get Unstuck
+Tools
+
+
+Avatar
+Review: Async JavaScript and HTTP Requests
+In this Unit, you learned about asynchronous JavaScript and how to use it to make HTTP requests to APIs.
+
+Congratulations! The goal of this unit was to understand APIs and introduce asynchronous JavaScript and the concepts behind HTTP requests.
+
+Having completed this unit, you are now able to:
+
+Write asynchronous JavaScript with async-await and promises syntax
+Explain the different types of HTTP requests
+Describe REST protocol
+Work with JSON data
+Make HTTP requests to external web APIs
+If you are interested in learning more about these topics, here are some additional resources:
+
+Documentation: Ajax
+Video: What the Heck is the Event Loop Anyways
+Resource: MDN’s Guide to Graceful asynchronous Programming with Promises
+Resource: MDN’s Guide to Choosing the Right Approach
+Article: MDN’s Introduction to web APIs
+Article: MDN’s Overview of HTTP
+Resource: MDN’s Guide to Fetching Data From the Server
+Documentation: MDN: Using the Fetch API
+Resource: MDN’s Guide to Third-party APIs
+Remember, you will put all of this knowledge into practice with an upcoming Portfolio Project. If you ever get stuck while working on the project, you can come back to this Unit and review what you have learned.
+
+Learning is social. Whatever you’re working on, be sure to connect with the Codecademy community in the forums. Remember to check in with the community regularly, including for things like asking for code reviews on your project work and providing code reviews to others in the projects category, which can help to reinforce what you’ve learned.
