@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[81],{KKCq:function(_,n,t){"use strict";t.d(n,"a",(function(){return FrancineSpinner}));var i=t("BviQ"),o=t("630U"),r=(t("q1tI"),t("nKUr"));const FrancineSpinner=()=>Object(r.jsx)(i.a,{size:14,style:{color:o.f["gray-400"]}})}}]);
+//# sourceMappingURL=81.7ec433392df02f039dab.chunk.js.map
