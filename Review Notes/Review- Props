@@ -1,0 +1,18 @@
+Review
+That completes our lesson on props! Here are some of the skills that you’ve learned:
+
+Passing a prop by giving an attribute to a component instance.
+Accessing a passed-in prop via props.propName.
+Displaying a prop.
+Using a prop to make decisions about what to display.
+Defining an event handler in a function component.
+Passing an event handler as a prop.
+Receiving a prop event handler and attaching it to an event listener.
+Naming event handlers and event handler attributes according to a convention.
+Accessing props.children.
+Assigning default values to props.
+That’s a lot! Don’t worry if it’s all a bit of a blur. You’ll soon get plenty of practice!
+
+What does props.children return? Everything between a componenet's opening and closing tags.
+If there are no props passed to a componenet, the component will render, but with empty values for any missing props.
+In React, Props are accessible in a componenet via the props object, where prop names are keys and their values are the values pased in vai JSX.

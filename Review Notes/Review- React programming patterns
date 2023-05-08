@@ -1,0 +1,18 @@
+Review
+Congrats! You’ve learned your first programming pattern to help organize your React code. You divided a complex React component into a container component and a couple of presentational components.
+
+Here are the steps we took:
+
+Identified that the original component needed to be refactored: it handled calculations/logic and presentation/rendering.
+Created a container component containing all the stateful logic.
+Created a function that calls the state setter method provided by useState().
+Created and exported presentational components containing only JSX.
+Imported the presentational components into the container component.
+Used the presentational components in the return statement of the container component.
+Passed state and functions used to change state as props to the rendered presentational components.
+In this programming pattern, the container component does the work of figuring out what to display using state. The presentational component does the work of actually displaying the state through props. If a component does a significant amount of work in both areas, then that’s a sign that you should use this pattern!
+
+The point of stateless componenets inheriting from stateful components: It's a common pattern used by REact programmers. Breaking down complex logic into separate classes that each have one job to do helps with testing and makes code more reusable.
+Necessary part of any "stateful" component: An initialization of state using the useState hook.
+Necessary in rder for a stateless chld component to update the state of its parent: A parent must define a fuction that contains the state setter function provideed by the useState hook.
+The presentation componenet holds the return statement containing HTML-like JSX.

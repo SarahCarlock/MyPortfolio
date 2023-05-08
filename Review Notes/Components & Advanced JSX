@@ -1,0 +1,11 @@
+Review
+Congratulations! You have finished the lesson on React components.
+
+Here’s a short recap of the concepts introduced in this lesson:
+
+Function components can return multiple JSX lines by nesting the elements in a parent element.
+Variable attributes can be used inside of a React component with JavaScript injections.
+React components support logic by putting the logic statements above the return statements. <MyComponent />
+Components can conditionally return JSX elements by putting conditional statements inside of the components.
+Components can respond to events by defining event handlers and passing them to the JSX elements.
+Great job on tackling these complex topics! You have spent a lot of time studying React components in isolation! Now, it’s time to learn how components fit into the world around them.

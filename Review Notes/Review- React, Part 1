@@ -1,0 +1,20 @@
+Review: React, Part I
+In this unit, you learned about React.
+
+Congratulations! The goal of this unit was to introduce you to the popular JavaScript library, React. React is a powerful tool to help you build better, scalable front-ends for your website through the creation of components. You also reviewed ES6 and functional JavaScript concepts to further help in your understanding of React.
+
+Having completed this unit, you are now able to:
+
+Understand ES6+ and functional JavaScript programming concepts
+Know what a Virtual DOM is and how it is used in React
+Understand JSX
+Build React components
+If you are interested in learning more about these topics, here are some additional resources:
+
+Documentation: React Documentation: Getting Started
+Tutorial: Intro to React
+Article: Thinking in React
+Article: What the Fork is the React Virtual DOM
+Resource: Awesome React
+Resource: Create React App
+Learning is social. Whatever you’re working on, be sure to connect with the Codecademy community in the forums. Remember to check in with the community regularly, including for things like asking for code reviews on your project work and providing code reviews to others in the projects category, which can help to reinforce what you’ve learned.
