@@ -1,0 +1,19 @@
+/*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+  }
+
+  /*Tablet vertical*/
+@media only screen and (max-width: 949px) {
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 640px) {
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+}
