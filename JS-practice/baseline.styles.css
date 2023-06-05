@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 180);
+}
+html {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    display: block;
+    position: inherit;
+}
+header {
+    text-align: center;
+    padding: 3rem;
+    margin-top: 5rem;
+   
+  }
+div.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.row > .column {
+    margin: .5rem;
+}
+div.column {
+    height: 10rem;
+    justify-content: center;
+}
+/*NAV*/
+div#menu-navbox {
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(255, 255, 180);
+    position: fixed;
+    top:0;
+}
+.fade {
+    padding-top: 1px;
+    display: none;
+}
+.fade2 {
+    display: inline;
+    padding-top: 0;
+}
+div#nav {
+   margin: 0;
+}
+nav {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+	transition: all 60s ease;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    padding: 1rem;
+}
+nav a {
+    color: black;
+    font-size: 1.5rem;
+    padding:10px;
+    text-decoration:none;
+    display:inline;
+    font-weight:bolder;
+    letter-spacing:2px;
+    float: left;
+    background-color: transparent;
+}
+nav a:hover {
+    background-color: rgba(104, 160, 213, 0.5);
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+}
+a.active {
+    background-color: rgba(104, 160, 213, 0.5);
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+}
+button {
+    display:block;
+    background:transparent;
+    border: 0;
+    text-align:center;
+    position:fixed;
+    top:10px;
+    left:10px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+}
+img#menu {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+/*Laptop Vertical*/
+@media only screen and (max-width: 1023px) {
+}
+
+/*Tablet vertical*/
+@media only screen and (max-width: 949px) {
+    nav a {
+        font-size: 1.25rem;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+    div.quote-container {
+        position: relative;
+        top: 5rem;
+    }
+}
+
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 682px) {
+    nav {
+        left: 0;
+        top: 4.5rem;
+    }
+    header {
+        margin-top: 6rem;
+    }
+}
+
+/*TEENY Screen*/
+@media only screen and (max-width: 460px) {
+}
+/*Quote Section in Home page */
+section.content-section {
+    height: auto;
+}
+div.quote-container {
+    display: block;
+    text-align: center;
+}
+p.quote {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+p#line1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.9);
+    box-shadow: 1rem 1rem 3rem rgba(128, 128, 128, 0.75),
+    1rem -1rem 3rem rgba(128, 128, 128, 0.75),
+    -1rem 1rem 3rem rgba(128, 128, 128, 0.75),
+    -1rem -1rem 3rem rgba(128, 128, 128, 0.75);
+}
+/* Contact Section */
+div p.introduction {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-family: lucida handwriting;
+}
+div.label {
+    justify-content: center;
+}
+div h1.introduction {
+    display: inline-flex;
+    font-size: 4rem;
+    font-weight: bold;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+div.socialbox {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    height: auto;
+  }
+a.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 6rem;
+    width: 6rem;
+  }
+a.social-link img {
+    z-index: 100;
+    width: 100%;
+    height: auto;
+}
+a.social-link img:hover {
+    height: auto;
+    width: 5rem;
+    opacity: 0.7;
+}
+div.icon-box {
+    padding: 3rem;
+}
+  /* Skills Section */
+div.lotsa-content {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    height: auto;
+  }
+div.left, div.right {
+    display: flex;
+    flex-flow: column wrap;
+   
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+div.skills-container {
+    height: auto;
+    width: auto;
+}
+ul.list {
+    display: flex;
+    flex-flow: column wrap;
+  }
+.skills-container li {
+    line-height: 1.5rem;
+}
+div.webicon-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+div.skill-item {
+    display: inline-flex;
+    height: 4rem;
+}
+div.qualifications-container {
+    display: inline-flex;
+    flex-flow: column wrap;
+    height: auto;
+}
+div.qual-item {
+    display: inline-flex;
+    height: 12rem;
+    align-items: center;
+}
+div.qual-item p {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+img.proof {
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    border-style: inset;
+    border-color: gray;
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+  }
+/*Smartphone*/
+@media only screen and (max-width: 767px) {
+}
+/*Mid-Point break for grid*/
+@media only screen and (max-width: 600px) {
+    div.qual-item {
+        justify-content: center;
+}
+}
+/* Project Section */
+div.project-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    height: auto;
+}
+div.project-row {
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 75%;
+}
+.project-row > .project-column {
+    margin: 2rem;
+}
+div.project-column, div.project-item {
+    height: 10rem;
+    width: 10rem;
+}
+div.project-item {
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+    border-color: rgb(172, 172, 172);
+    box-shadow: 1rem 1rem 1rem rgba(128, 128, 128, 0.75);
+}
+.img-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+a.projectlink  {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-family: lucida handwriting;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+}
