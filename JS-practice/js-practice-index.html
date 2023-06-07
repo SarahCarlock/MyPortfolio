@@ -7,7 +7,9 @@
   <!-- Favicon -->
 <link id="favicon" rel="icon" type="image/x-icon" href="Sarahfavicon.png">
 <!-- My custom CSS-->
+<link rel="stylesheet" href="scripts/js-practice.css">
 <link rel="stylesheet" href="baseline.styles.css" />
+
 <title>Portfolio</title>
 </head>
 
@@ -38,34 +40,29 @@
 
         </div>
     </header>
+
     <section class="content-section">
-        <div class="currentday/date/time">
-            
+      <div class="flex-container">
+        <div id="clockDisplay" class="currentDayDateTime" onload="currentTime()">
+          CodeCodyCode Clock
         </div>
-        <div class="">
-
+        <div id="calendarDisplay" class="currentDayDateTime" onload="currentDay()">
+          Calendar
         </div>
-
-    </section>
-
-
-<!-- 
-
-    <section class="content-section" id="quote-section">
-      <div class="row">
-        <div class="quote-container" >
-          <p class="quote" id="line2">Whether you dive deeper into your current interests <br>or start a brand new curiosity,</p>
-          <p class="quote" id="line1">Never stop learning.</p>
+        <div id="dateDisplay" class="currentDayDateTime" onload="currentDate()">
+          Date
         </div>
       </div>
-    </section> -->
 
+
+    </section>
 </main>
       
       <footer>
         <p class="origin">created by sarah</p>
       </footer>
+      <script src="scripts/contactinformationscript.js" async></script>
+      <script src="scripts/currentDayDateTime.js" async></script>
 </body>
-<script src="contactinformationscript.js"></script>
-<script src="./scripts/daydatetime.js"></script>
+
 </html>

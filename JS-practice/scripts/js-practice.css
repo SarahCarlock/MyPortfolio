@@ -1,0 +1,24 @@
+section {
+    width: auto;
+    margin: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.currentDayDateTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: azure;
+    color: darkorange;
+    border: .25rem;
+    border-radius: 50%;
+    border-style: dotted;
+    text-align: center;
+}
