@@ -1,0 +1,51 @@
+
+.clock {
+    position: absolute;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    border: solid .3rem rgb(252,255,55);
+    opacity: 50%;
+    background-color: rgb(43,43,43);
+}
+
+#seconds-hand {
+    position: absolute;
+    height: 3.75rem;
+    width: .15rem;
+    background-color: black;
+    opacity:50%;
+    transform-origin: 0% 100%;
+    left: 50%;
+    bottom: 50%;
+}
+
+#minutes-hand {
+    position: absolute;
+    height: 2.5rem;
+    width: .2rem;
+    background-color: rgb(253,120,227);
+    transform-origin: 0% 100%;
+    left: 47%;
+    bottom: 47%;
+}
+
+#hours-hand {
+    position: absolute;
+    height: 1.75rem;
+    width: .2rem;
+    background-color: rgb(70,255,255);
+    transform-origin: 0% 100%;
+    left: 48%;
+    bottom: 48%;
+}
+
+#center {
+    position: absolute;
+    height: .5rem;
+    width: .5rem;
+    border-radius: .3rem;
+    background-color: rgb(252,255,55);
+    left: 46%;
+    bottom: 46%;
+}

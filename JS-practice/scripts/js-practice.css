@@ -16,9 +16,8 @@ section {
     width: 8rem;
     height: 8rem;
     background-color: azure;
-    color: darkorange;
-    border: .25rem;
+    color: rgb(43,43,43);
+    border: dotted .25rem darkorange;
     border-radius: 50%;
-    border-style: dotted;
     text-align: center;
 }
