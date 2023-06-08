@@ -15,7 +15,7 @@ function currentTime() {
     let minute = date.getMinutes();
     let second = date.getSeconds();
 
-    clockDisplay.innerHTML = `The current time is ${hour}:${minute}:${second}`;
+    clockDisplay.innerHTML = `The time is ${hour}:${minute}:${second}`;
 };
 
 function currentDate() {
@@ -24,7 +24,7 @@ function currentDate() {
     dateDisplay.innerHTML = date;
 };
 
-currentTime();
 currentDay();
 currentDate();
 
+setInterval(currentTime, 100);
