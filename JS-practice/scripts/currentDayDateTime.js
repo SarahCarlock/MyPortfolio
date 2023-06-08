@@ -24,7 +24,6 @@ function currentDate() {
     dateDisplay.innerHTML = date;
 };
 
-currentDay();
-currentDate();
-
 setInterval(currentTime, 100);
+setInterval(currentDay, 100);
+setInterval(currentDate, 100);
