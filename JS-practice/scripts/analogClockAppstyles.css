@@ -1,10 +1,10 @@
 
 .clock {
-    position: absolute;
+    position: relative;
     height: 6.5rem;
     width: 6.5rem;
     border-radius: 50%;
-    border: solid .3rem rgb(252,255,55);
+    border: solid .5rem rgb(252,255,55);
     opacity: 50%;
     background-color: rgb(43,43,43);
 }
@@ -15,14 +15,14 @@
     width: .15rem;
     background-color: black;
     opacity:50%;
-    transform-origin: 0% 100%;
+    transform-origin: 10% 100%;
     left: 50%;
     bottom: 50%;
 }
 
 #minutes-hand {
     position: absolute;
-    height: 2.5rem;
+    height: 3.25rem;
     width: .2rem;
     background-color: rgb(253,120,227);
     transform-origin: 0% 100%;
@@ -32,20 +32,20 @@
 
 #hours-hand {
     position: absolute;
-    height: 1.75rem;
+    height: 2rem;
     width: .2rem;
     background-color: rgb(70,255,255);
     transform-origin: 0% 100%;
-    left: 48%;
-    bottom: 48%;
+    left: 50%;
+    bottom: 50%;
 }
 
 #center {
     position: absolute;
-    height: .5rem;
-    width: .5rem;
-    border-radius: .3rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
     background-color: rgb(252,255,55);
-    left: 46%;
-    bottom: 46%;
+    top: 2.25rem;
+    right: 2.25rem;
 }
