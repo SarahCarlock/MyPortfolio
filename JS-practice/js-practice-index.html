@@ -8,8 +8,9 @@
 <link id="favicon" rel="icon" type="image/x-icon" href="Sarahfavicon.png">
 <!-- My custom CSS-->
 <link rel="stylesheet" href="scripts/js-practice.css">
-<link rel="stylesheet" href="baseline.styles.css" />
+<link rel="stylesheet" href="baseline.styles.css">
 <link rel="stylesheet" href="scripts/analogClockAppstyles.css">
+<link rel="stylesheet" href="EightBall/eightBall.css">
 
 <title>Portfolio</title>
 </head>
@@ -44,9 +45,10 @@
 
     <section class="content-section">
       <div class="flex-container">
-        <div id="clockDisplay" class="currentDayDateTime" onload="currentTime()">
+        <div id="clockDisplay" class="currentDayDateTime" >
           CodeCodyCode Clock
         </div>
+
         <div class="currentDayDateTime">
           <div class="clock">
               <div id="seconds-hand"></div>
@@ -54,17 +56,36 @@
               <div id="hours-hand"></div>
               <div id="center"></div>
           </div>
-      </div>
-        <div id="calendarDisplay" class="currentDayDateTime" onload="currentDay()">
+        </div>
+
+        <div id="calendarDisplay" class="currentDayDateTime">
           Calendar
         </div>
-        <div id="dateDisplay" class="currentDayDateTime" onload="currentDate()">
+
+        <div id="dateDisplay" class="currentDayDateTime">
           Date
         </div>
 
       </div>
 
+      <div class="flex-container">
+        <div class="games">
 
+          <div id="eightBallDisplay">
+            <form target="_parent">
+              <label for="userName"></label>
+              <input type="text" id="userName" name="userName" class="eightBallQuestion" placeholder="Who are you?" />
+              <label for="question"></label>
+              <input type="text" id="question" name="question"class="eightBallQuestion" placeholder="What would you like to ask the Magic 8 Ball?" >
+              <label for="submit"></label>
+              <button type="submit" id="submit" name="submit" class="button">Click here for your answer!</button>
+              <output id="eightBallAnswer"></output>
+            </form>
+            <img src="EightBall/8ball.png" alt="EightBall">
+          </div>
+
+        </div>
+      </div>
     </section>
 </main>
       
@@ -74,6 +95,7 @@
       <script src="scripts/contactinformationscript.js" async></script>
       <script src="scripts/currentDayDateTime.js" async></script>
       <script src="scripts/analogClockApp.js" async></script>
+      <script src="EightBall/eightBall().js" async></script>
 </body>
 
 </html>

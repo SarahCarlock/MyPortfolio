@@ -1,10 +1,15 @@
-let userName = "";
-userName  ? console.log('Hello, ${userName}!') : console.log('Hello!'); 
-const userQuestion = "";
+const eightBallDisplay = document.getElementById('eightBallDisplay');
+const userName = document.getElementById('userName');
+const userQuestion = document.getElementById('question');
+const eightBallAnswer =  document.getElementById('eightBallAnswer');
 
-userQuestion ? console.log('${userName} asked "${userQuestion}." ') : console.log('What is your question?');
+function eightBall() {
+  const userQuestion = "";
 
-const randomNumber = Math.floor(Math.random() * 8);
+  userName  ? console.log('Hello, ${userName}!') : console.log('Hello!');
+  userQuestion ? console.log('${userName} asked "${userQuestion}." ') : console.log('What is your question?');
+
+  const randomNumber = Math.floor(Math.random() * 8);
 
 let eightBall = (randomNumber);
   if (randomNumber ===1) {
@@ -26,3 +31,10 @@ let eightBall = (randomNumber);
   };
 
 console.log(eightBall);
+}
+
+eightBall();
+
+
+
+
