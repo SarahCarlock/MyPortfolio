@@ -72,15 +72,11 @@
         <div class="games">
 
           <div id="eightBallDisplay">
-            <form target="_parent">
-              <label for="userName"></label>
-              <input type="text" id="userName" name="userName" class="eightBallQuestion" placeholder="Who are you?" />
-              <label for="question"></label>
-              <input type="text" id="question" name="question"class="eightBallQuestion" placeholder="What would you like to ask the Magic 8 Ball?" >
-              <label for="submit"></label>
-              <button type="submit" id="submit" name="submit" class="button">Click here for your answer!</button>
+              <textarea class="m8b-textbox eightBallQuestion" rows="2" placeholder="Type your question here..."></textarea>
+
+              <span class="btn btn--primary btn--bordered btn-shake">Shake 8 ball</span>
+              <span class="btn btn--primary btn--bordered btn-shake">Shake again!</span>
               <output id="eightBallAnswer"></output>
-            </form>
             <img src="EightBall/8ball.png" alt="EightBall">
           </div>
 
@@ -92,10 +88,10 @@
       <footer>
         <p class="origin">created by sarah</p>
       </footer>
-      <script src="scripts/contactinformationscript.js" async></script>
-      <script src="scripts/currentDayDateTime.js" async></script>
-      <script src="scripts/analogClockApp.js" async></script>
-      <script src="EightBall/eightBall().js" async></script>
-</body>
 
+</body>
+<script src="scripts/contactinformationscript.js" ></script>
+<script src="scripts/currentDayDateTime.js" ></script>
+<script src="scripts/analogClockApp.js" ></script>
+<script src="EightBall/eightBall().js" ></script>
 </html>

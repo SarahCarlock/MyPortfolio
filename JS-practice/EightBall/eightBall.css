@@ -10,6 +10,11 @@
     cursor: pointer;
 }
 
+.btn--bordered.btn--primary {
+    color: #2d53fe;
+    border-color: #2d53fe;
+}
+
 .games {
     display: flex;
     justify-content: center;
